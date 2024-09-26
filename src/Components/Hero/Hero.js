@@ -1,0 +1,69 @@
+import React from 'react'
+import herologo from '../Assets/Vector.png'
+import { FaApple } from "react-icons/fa";
+import image1 from '../Assets/hero_bottom_right.png'
+import googleplayicon from '../Assets/icons8-google-play.svg'
+
+
+const Hero = () => {
+  return (
+    <>
+
+    <div className='h-[500px] mt-48'>
+
+   <div className='relative w-full px-4'>
+     <div className='container sm:px-8 px-4 mx-auto flex flex-col lg:flex-row'>
+      <div className=' w-full md:mt-8'>
+      <img src={herologo} className='sm:w-96 w-64 mx-auto' />
+      <p className='text-lg font-medium font-family text-white mt-6 text-center'>Polling and fundraising for cause that really matter.</p>
+      <div className='flex lg:justify-start md:justify-center'>
+     
+        <button
+        className="group/button relative inline-flex items-center mx-auto mt-6 justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
+        text-white backdrop-blur-lg px-6 py-2 text-base font-semibold transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-[#B60095]"
+        >
+        <span className="text-lg tracking-wider font-family">Get Started</span>
+        <div
+            className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+        >
+            <div className="relative h-full w-10 bg-white/30"></div>
+        </div>
+        </button>
+      </div>
+
+
+   {/* App Store and Google play Buttons */}
+   <div className="flex justify-center sm:flex-row flex-col sm:space-x-4 space-y-4 sm:space-y-0 mt-9">
+      <button
+        className="inline-flex items-center hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095] bg-black text-white py-1 px-4 sm:m-0 m-auto rounded-lg shadow-md border"
+      >
+        <FaApple className="text-4xl mr-2" />
+        <div className="text-left">
+          <p className="text-xs font-family">Available on the</p>
+          <p className="text-lg font-medium font-family">App Store</p>
+        </div>
+      </button>
+
+      <button
+        className="inline-flex items-center bg-black hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095] text-white py-1 px-4 sm:m-0 m-auto rounded-lg shadow-md border"
+      >
+        <img src={googleplayicon} className='w-9 mr-2' />
+        <div className="text-left">
+          <p className="text-xs font-family">Get it on</p>
+          <p className="text-lg font-medium font-family">Google Play</p>
+        </div>
+      </button>
+    </div>
+    </div>
+   </div>
+  </div>
+    <img src={image1} className='ml-auto md:block hidden w-1/4 relative -mt-72' />
+
+ </div>
+    
+
+    </>
+  )
+}
+
+export default Hero
