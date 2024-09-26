@@ -27,7 +27,7 @@ const AccordionItem = ({ title, content, icon, isActive, onMouseEnter, onMouseLe
           <span 
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
-            className="group-hover:text-[#6122ED] font-family duration-500 cursor-pointer"
+            className="group-hover:text-[#6122ED] font-family duration-500 cursor-pointer select-none"
           >
             {title}
           </span>
