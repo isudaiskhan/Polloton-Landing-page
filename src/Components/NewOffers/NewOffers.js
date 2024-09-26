@@ -4,14 +4,12 @@ import defaultImage from '../Assets/Polloton Hand.png';
 import image1 from '../Assets/wmud1.1.png';
 import image2 from '../Assets/hwd2.0.png';
 import image3 from '../Assets/wmud3.0.png';
-import image4 from '../Assets/Vector 4.png';
 import image5 from '../Assets/Vector5.png';
 import image6 from '../Assets/Vector6.png';
 import image7 from '../Assets/Vector 7.png';
 import image8 from '../Assets/image1.png';
 import image9 from '../Assets/image2.png';
 import image10 from '../Assets/image3.png';
-import image11 from '../Assets/image4.png';
 import image12 from '../Assets/image5.png';
 import image13 from '../Assets/image6.png';
 import image14 from '../Assets/image7.png';
@@ -79,12 +77,6 @@ const NewOffers = () => {
       content: "Who said making a difference can't be fun? Gamify your polls and fundraising efforts for a unique and rewarding experience. Or have fun with popular polls and supporting meaningful causes at the same time.",
       icon: image3,
       image: image10,
-    },
-    {
-      title: "The Media Meter: Real-time Reality Check.",
-      content: "Poll trending topics and measure opinions in news and social media posts with public sentiments in real time.",
-      icon: image4,
-      image: image11,
     },
     {
       title: "The Power of Diverse Opinions.",

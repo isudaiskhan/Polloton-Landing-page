@@ -34,9 +34,7 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
-  const navItems = [
-    { id: 'login', label: 'Login', link: '/login' },
-  ];
+ 
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
@@ -62,23 +60,6 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-24 ml-auto">
-              <ul className="flex items-center space-x-3 mx-auto">
-                {navItems.map((item) => (
-                  <li key={item.id} className="p-3 mx-2 border-transparent relative group cursor-pointer">
-                    <NavLink
-                      to={item.link}
-                      onClick={() => setMobileMenu(false)} // Close mobile menu when navigating
-                      className={`text-white hover:text-[#6122ED]`}
-                      activeclassname="text-[#6122ED] underline"
-                      style={{ color: location.pathname === item.link ? '#6122ED' : '' }}
-                    >
-                      {item.label}
-                      <span
-                        className={`absolute bottom-0 left-0 w-full h-[3px] bg-[#6122ED] ${location.pathname === item.link ? 'scale-x-100' : 'scale-x-0'} transition-transform origin-bottom-left`}
-                      ></span>
-                    </NavLink>
-                  </li>
-                ))}
                 <button
                   className="group/button relative items-center mx-auto justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
                   text-white backdrop-blur-lg px-5 py-1.5 text-base font-semibold "
@@ -88,7 +69,6 @@ const Navbar = () => {
                     <div className="relative h-full w-10 bg-white/30"></div>
                   </div>
                 </button>
-              </ul>
             </div>
 
             <div className="block md:hidden">
@@ -117,19 +97,7 @@ const Navbar = () => {
               <AiOutlineClose className="text-4xl text-white hover:text-gray-300" />
             </button>
             <ul className="mt-8 flex flex-col space-y-7">
-              {navItems.map((item) => (
-                <li key={item.id} className="py-2">
-                  <NavLink
-                    to={item.link}
-                    className="cursor-pointer pt-0.5 uppercase text-white"
-                    activeclassname="font-semibold"
-                    onClick={closeMobileMenu}
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              ))}
-
+           
         <div className="md:hidden block text-white">
           <div className="text-lg mb-4">What's new?</div>
           <div className="text-lg mb-6">What we offer?</div>
