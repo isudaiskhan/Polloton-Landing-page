@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { motion } from "framer-motion";
 import defaultImage from '../Assets/Polloton Hand.png';
 import image1 from '../Assets/wmud1.1.png';
@@ -59,6 +59,28 @@ const NewOffers = () => {
     setActiveImage(defaultImage);
   };
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty dependency array ensures that effect runs only once after mount
+
+  const initialX = windowSize.width >= 640 ? -300 : -170;
+
+
   const items = [
     {
       title: "Empowered by Voice, United by Purpose.",
@@ -99,9 +121,19 @@ const NewOffers = () => {
   ];
 
   return (
-    <div className="text-white py-20 px-6 container mx-auto flex flex-col lg:flex-row items-center justify-between">
+    <div className="text-white overflow-hidden py-20 px-6 container mx-auto flex flex-col lg:flex-row items-center justify-between">
       {/* Accordion */}
-      <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
+      <motion.div
+    initial={{ x: initialX, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ 
+    delay: 0.2, 
+    x: { type: "spring", stiffness: 60 },
+    opacity: { duration: 1 },
+    ease: "easeIn",
+    duration: 1
+  }}
+       className="w-full lg:w-1/2 mb-12 lg:mb-0">
         <h2 className="text-3xl font-medium font-family mb-6">What's new?</h2>
         <div className="space-y-4">
           {items.map((item, index) => (
@@ -116,16 +148,20 @@ const NewOffers = () => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
 
       <div className="w-full lg:w-1/2 flex justify-center">
-        <div className="relative">
+      <motion.div
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 60, duration: 1 }}
+         className="relative">
           <img
             src={activeImage} 
             alt="Hand Graphic"
             className="max-h-[32rem]"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

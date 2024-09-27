@@ -1,17 +1,51 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react'
 import herologo from '../Assets/Vector.png'
 import { FaApple } from "react-icons/fa";
 import image1 from '../Assets/hero_bottom_right.png'
 import googleplayicon from '../Assets/icons8-google-play.svg'
+import {motion} from 'framer-motion';
 
 
 const Hero = () => {
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty dependency array ensures that effect runs only once after mount
+
+  const initialX = windowSize.width >= 640 ? -300 : -170;
+
+
   return (
     <>
 
-    <div className='h-[700px] mt-48'>
+    <div className='h-[700px] mt-48 overflow-hidden'>
 
-   <div className='relative w-full px-4'>
+    <motion.div
+    initial={{ x: initialX, opacity: 0 }} 
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ 
+    delay: 0.2, 
+    x: { type: "spring", stiffness: 60 },
+    opacity: { duration: 1 },
+    ease: "easeIn",
+    duration: 1
+  }}
+    className='relative w-full px-4'>
      <div className='container sm:px-8 px-4 mx-auto flex flex-col lg:flex-row'>
       <div className=' w-full md:mt-8'>
       <img src={herologo} className='sm:w-96 w-64 mx-auto' />
@@ -71,7 +105,7 @@ const Hero = () => {
     </div>
     </div>
    </div>
-  </div>
+  </motion.div>
     <img src={image1} className='ml-auto md:block hidden w-1/4 relative -mt-72' />
 
  </div>

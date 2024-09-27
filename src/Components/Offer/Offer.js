@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState , useEffect } from "react"; 
 import defaultImage from '../Assets/Phone.png';
 import image1 from '../Assets/Vector (1).png';
 import image2 from '../Assets/Vector (2).png';
@@ -14,6 +14,8 @@ import image11 from '../Assets/hoverImage (1).png';
 import image12 from '../Assets/hoverImage (2).png';
 import image13 from '../Assets/hoverImage (3).png';
 import image14 from '../Assets/hoverImage (1).png';
+import { motion } from "framer-motion";
+
 
 const AccordionItem = ({ title, content, icon, isActive, onMouseEnter, onMouseLeave }) => {
   return (
@@ -38,6 +40,29 @@ const AccordionItem = ({ title, content, icon, isActive, onMouseEnter, onMouseLe
 const Offer = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [activeImage, setActiveImage] = useState(defaultImage);
+
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Empty dependency array ensures that effect runs only once after mount
+
+  const initialX = windowSize.width >= 640 ? -300 : -170;
+
 
   const items = [
     {
@@ -85,9 +110,19 @@ const Offer = () => {
   ];
 
   return (
-    <div className="text-white container mx-auto py-24 px-6 flex flex-col lg:flex-row items-center justify-between">
+    <div className="text-white overflow-hidden container mx-auto py-24 px-6 flex flex-col lg:flex-row items-center justify-between">
       {/* Accordion */}
-      <div className="w-full lg:w-[45%] mb-12 lg:mb-0">
+      <motion.div
+    initial={{ x: initialX, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ 
+    delay: 0.2, 
+    x: { type: "spring", stiffness: 60 },
+    opacity: { duration: 1 },
+    ease: "easeIn",
+    duration: 1
+  }}
+       className="w-full lg:w-[45%] mb-12 lg:mb-0">
         <h2 className="text-3xl font-medium font-family mb-6">What we offer?</h2>
         <div className="space-y-">
           {items.map((item, index) => (
@@ -102,16 +137,20 @@ const Offer = () => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
 
       <div className="w-full lg:w-1/2 flex justify-center">
-        <div className="relative">
+      <motion.div
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }} 
+        transition={{ delay: 0.2, type: "spring", stiffness: 60, duration: 1 }}
+         className="relative">
           <img
             src={activeImage}
             alt="Hand Graphic"
             className={`max-h-[32rem] transition-all duration-500 ease-in-out opacity-100`}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
