@@ -44,6 +44,14 @@ const Navbar = () => {
     setMobileMenu(false);
   };
 
+  const scrollToDownload = () => {
+    const downloadSection = document.getElementById('download');
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <>
       <nav className={`fixed top-0 w-full border-b border-b-[#6122ED] z-50 transition duration-300 ${hasScrolled ? 'bg-[#13072E]' : ''} ${hasScrolled && window.scrollY > 10 ? 'top-0 shadow-xl' : ''}`}>
@@ -61,6 +69,7 @@ const Navbar = () => {
 
             <div className="hidden md:flex items-center space-x-24 ml-auto">
                 <button
+                onClick={scrollToDownload}
                   className="group/button relative items-center mx-auto justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
                   text-white backdrop-blur-lg px-5 py-1.5 text-base font-semibold "
                 >
@@ -102,6 +111,7 @@ const Navbar = () => {
           <div className="text-lg mb-4">What's new?</div>
           <div className="text-lg mb-6">What we offer?</div>
           <button
+          onClick={scrollToDownload}
             className="group/button relative items-center border-2 mx-auto justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
             text-white backdrop-blur-lg px-5 py-1.5 text-base font-semibold "
           >

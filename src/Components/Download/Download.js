@@ -7,25 +7,23 @@ import googleplayicon from '../Assets/icons8-google-play.svg'
 const Download = () => {
   return (
     <>
-    <div className='sm:px-6 container mx-auto'>
+    <div className='sm:px-6 container mx-auto' id='download'>
     <div className='py-24 mt-12'>
     <div className="bg-gradient-to-r from-[#9255E0] to-[#6122ED] text-white sm:p-8 p-5 rounded-xl">
       <div className="mb-8">
       <h1 className="text-4xl font-semibold font-family mb-4">Get Started</h1>
 
-        <h1 className="text-2xl font-family font-medium mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-        <p className="">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+        <h1 className="text-2xl font-family font-medium mb-4">Monetize your passion for driving positive change today.</h1>
     
       </div>
       
       <div className="grid lg:grid-cols-2 gap-6">
         <div className="bg-[#1A1A1A] p-6 rounded-lg flex flex-col justify-between">
           <div>
-            <h2 className="text-2xl font-medium font-family text-white mb-4">Download from App Store / Play Store</h2>
+            <h2 className="text-2xl font-medium font-family text-white mb-4">Download the App</h2>
             <p className="text-gray-400 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum..
+            Take control of your daily activities and stay updated on the go. Download our app now and enjoy a seamless, user-friendly experience to help you manage everything at your fingertips. Available on both iOS and Android platforms.
+
             </p>
           </div>
 
@@ -55,11 +53,12 @@ const Download = () => {
         </div>
 
     {/* Right Card - QR Code Section */}
-   <div className="bg-[#1A1A1A] p-6 rounded-lg flex flex-col md:flex-row justify-between">
+   <div className="bg-[#1A1A1A] p-6 md:space-x-3 rounded-lg flex flex-col md:flex-row justify-between">
    <div className="md:w-3/4 text-left">
     <h2 className="text-2xl font-medium text-white font-family mb-4">Scan QR Code</h2>
     <p className="text-gray-400 text-sm">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis nunc a molestie dictum. Mauris venenatis, felis scelerisque aliquet lacinia, nulla nisi venenatis odio, id blandit mauris ipsum id sapien.
+    Instantly access exclusive content or quickly download our app by scanning the QR code below. No need to type out links just scan and get started in seconds, whether you're using your smartphone or tablet.
+
     </p>
   </div>
 
