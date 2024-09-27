@@ -121,7 +121,7 @@ const Navbar = () => {
             </button>
             <ul className="mt-8 flex flex-col space-y-7">
            
-        <div className="md:hidden block text-white">
+        <div className="md:hidden block text-white" onClick={closeMobileMenu}>
           <div onClick={scrollTowhatsnew} className="text-lg mb-4">What's new?</div>
           <div onClick={scrollTowhatweoffer} className="text-lg mb-6">What we offer?</div>
           <button
