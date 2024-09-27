@@ -110,7 +110,7 @@ const Offer = () => {
   ];
 
   return (
-    <div className="text-white overflow-hidden container mx-auto py-24 px-6 flex flex-col lg:flex-row items-center justify-between">
+    <div className="text-white overflow-hidden container mx-auto py-24 px-6 flex flex-col lg:flex-row items-center justify-between" id="whatweoffer">
       {/* Accordion */}
       <motion.div
     initial={{ x: initialX, opacity: 0 }}

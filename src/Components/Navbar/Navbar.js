@@ -51,6 +51,20 @@ const Navbar = () => {
     }
   };
 
+  const scrollTowhatsnew = () => {
+    const whatsnewSection = document.getElementById('whatsnew');
+    if (whatsnewSection) {
+      whatsnewSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+  const scrollTowhatweoffer = () => {
+    const whatweofferSection = document.getElementById('whatweoffer');
+    if (whatweofferSection) {
+      whatweofferSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -63,8 +77,8 @@ const Navbar = () => {
 
             {/* Center Text */}
             <div className="hidden md:flex flex-1 items-center justify-center text-white space-x-4">
-              <span className="text-lg hover:text-[#6122ED] cursor-pointer duration-300">What's new?</span>
-              <span className="text-lg hover:text-[#6122ED] cursor-pointer duration-300">What we offer?</span>
+              <span onClick={scrollTowhatsnew} className="text-lg hover:text-[#6122ED] cursor-pointer duration-300">What's new?</span>
+              <span onClick={scrollTowhatweoffer} className="text-lg hover:text-[#6122ED] cursor-pointer duration-300">What we offer?</span>
             </div>
 
             <div className="hidden md:flex items-center space-x-24 ml-auto">
@@ -108,8 +122,8 @@ const Navbar = () => {
             <ul className="mt-8 flex flex-col space-y-7">
            
         <div className="md:hidden block text-white">
-          <div className="text-lg mb-4">What's new?</div>
-          <div className="text-lg mb-6">What we offer?</div>
+          <div onClick={scrollTowhatsnew} className="text-lg mb-4">What's new?</div>
+          <div onClick={scrollTowhatweoffer} className="text-lg mb-6">What we offer?</div>
           <button
           onClick={scrollToDownload}
             className="group/button relative items-center border-2 mx-auto justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
