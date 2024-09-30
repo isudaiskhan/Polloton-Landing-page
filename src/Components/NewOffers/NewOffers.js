@@ -116,12 +116,6 @@ const NewOffers = () => {
       image: image10,
     },
     {
-      title: "The Media Meter: Real-time Reality Check.",
-      content: "Poll trending topics and measure opinions in news media and social media with public sentiment in real time.",
-      icon: image7,
-      image: image14,
-    },
-    {
       title: "The Power of Diverse Opinions.",
       content: "Tap into a universe of voters across many social media and news media platforms to measure the real pulse of the people.",
       icon: image5,
@@ -137,17 +131,9 @@ const NewOffers = () => {
     {
       title: "Monetize Your Insights.",
       content: "Turn your interest in topics that matter to many of us into income. We empower creators of popular polls to monetize their content through tips and business sponsorships.",
-      icon: image3,
-      image: image10,
-    },
-
-    {
-      title: "Engage Your Audience, Elevate Your Brand.",
-      content: "Our platform allows businesses to sponsor influential authors and popular polls for targeted exposure and positive association.",
       icon: image7,
       image: image14,
     },
-    
    
   ];
 
