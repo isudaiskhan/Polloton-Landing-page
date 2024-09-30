@@ -23,9 +23,8 @@ const Hero = () => {
 
     window.addEventListener('resize', handleResize);
 
-    // Cleanup
     return () => window.removeEventListener('resize', handleResize);
-  }, []); // Empty dependency array ensures that effect runs only once after mount
+  }, []); 
 
   const initialX = windowSize.width >= 640 ? -300 : -170;
 
@@ -33,7 +32,7 @@ const Hero = () => {
   return (
     <>
 
-    <div className='h-[700px] mt-48 overflow-hidden'>
+    <div className='h-[720px] mt-48 overflow-hidden'>
 
     <motion.div
     initial={{ x: initialX, opacity: 0 }} 
@@ -50,27 +49,12 @@ const Hero = () => {
       <div className=' w-full md:mt-8'>
       <img src={herologo} className='sm:w-96 w-64 mx-auto' />
       <p className='text-lg font-medium font-family text-white mt-6 text-center'>Polling and fundraising for cause that matter.</p>
-      <div className='flex lg:justify-start md:justify-center'>
-     
-        <button
-        className="group/button relative inline-flex items-center mx-auto mt-6 justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
-        text-white backdrop-blur-lg px-5 py-3 text-base font-semibold transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-[#B60095]"
-        >
-        <span className="font-family">Download the App</span>
-        <div
-            className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
-        >
-            <div className="relative h-full w-10 bg-white/30"></div>
-        </div>
-        </button>
-      </div>
-
       <div className='text-white xl:px-52 lg:px-36 mt-6'>
-  <p className='text-center mb-5'>
-    Our application enables users to compare opinions in news and social media with public sentiment. Amplify your voice and your impact to shape insightful public discourse and to raise funds for causes that matter.
-  </p>
-  <p className='text-center mb-2 sm:text-lg sm:font-family font-medium'>
-    Start to monetize your passion today:
+      <p className='text-center mb-5'>
+        Our application enables users to compare opinions in news and social media with public sentiment. Amplify your voice and your impact to shape insightful public discourse and to raise funds for causes that matter.
+      </p>
+      <p className='text-center mb-2 sm:text-lg sm:font-family font-medium'>
+        Start to monetize your passion today:
   </p>
   <div className='flex flex-wrap justify-center gap-x-2 sm:gap-x-6 text-center'>
     <span className='block'>Every poll makes a difference.</span>
@@ -103,10 +87,27 @@ const Hero = () => {
         </div>
       </button>
     </div>
+
+    <div className='flex lg:justify-start mt-3 md:justify-center'>
+     
+     <button
+     className="group/button relative inline-flex items-center mx-auto mt-6 justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
+     text-white backdrop-blur-lg px-5 py-3 text-base font-semibold transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-[#B60095]"
+     >
+     <span className="font-family">Download the App</span>
+     <div
+         className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+     >
+         <div className="relative h-full w-10 bg-white/30"></div>
+     </div>
+     </button>
+   </div>
+
+
     </div>
    </div>
   </motion.div>
-    <img src={image1} className='ml-auto md:block hidden w-1/4 relative -mt-72' />
+    <img src={image1} className='ml-auto md:block hidden w-[23%] -mt-[420px]' />
 
  </div>
     

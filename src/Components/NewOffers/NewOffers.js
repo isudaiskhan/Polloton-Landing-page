@@ -16,35 +16,38 @@ import image14 from '../Assets/image7.png';
 
 const AccordionItem = ({ title, content, icon, isActive, onMouseEnter, onMouseLeave }) => {
   return (
-    <div>
-      <div
-        className="w-full text-left flex items-center justify-between py-4 focus:outline-none"
-         
-      >
-        <div className="flex items-center group">
-          <img src={icon} alt="icon" className="w-7 h-7 mr-4" />
-          <span 
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-            className="group-hover:text-[#6122ED] font-family duration-500 cursor-pointer select-none"
-          >
-            {title}
-          </span>
-        </div>
+    <div
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className="w-full text-left py-4 focus:outline-none transition-all duration-500"
+    >
+      {/* Title section */}
+      <div className="flex items-center group">
+        <img src={icon} alt="icon" className="w-7 h-7 mr-4" />
+        <span
+          className={`font-family duration-500 cursor-pointer select-none transition-all px-2 py-2 ${
+            isActive ? 'text-[#6122ED]' : 'group-hover:text-[#6122ED]'
+          }`}
+          style={{ backgroundColor: 'transparent' }}
+        >
+          {title}
+        </span>
       </div>
-      
+
       {/* Smooth Animation */}
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isActive ? "auto" : 0, opacity: isActive ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }} 
-        style={{ overflow: "hidden" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        style={{ overflowY: isActive ? 'visible' : 'hidden', minHeight: isActive ? 'auto' : 0 }}
+
       >
-        <p className="sm:pt-2 sm:px-10 ps-11 text-sm pb-4 text-white">{content}</p>
+        <p className="px-[3.2rem] text-sm pb-4 text-white">{content}</p>
       </motion.div>
     </div>
   );
 };
+
 
 const NewOffers = () => {
   const [activeIndex, setActiveIndex] = useState(null); 
@@ -185,3 +188,5 @@ const NewOffers = () => {
 };
 
 export default NewOffers;
+
+
