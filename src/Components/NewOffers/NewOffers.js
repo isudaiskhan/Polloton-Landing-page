@@ -19,7 +19,7 @@ const AccordionItem = ({ title, content, icon, isActive, onMouseEnter, onMouseLe
     <div>
       <div
         className="w-full text-left flex items-center justify-between py-4 focus:outline-none"
-         id="whatsnew"
+         
       >
         <div className="flex items-center group">
           <img src={icon} alt="icon" className="w-7 h-7 mr-4" />
@@ -99,44 +99,60 @@ const NewOffers = () => {
   const items = [
     {
       title: "Empowered by Voice, United by Purpose.",
-      content: "We are not just a polling service; we are a platform for change. Join a diverse community that is passionate about shaping insightful public discourse on topics that matter, and united in driving positive change. Amplify your voice and your impact.",
+      content: "We are not just a polling service; we are a platform for driving positive change Join a diverse community that is passionate about shaping insightful public discourse on topics that matter.",
       icon: image1,
       image: image8,
     },
     {
       title: "Dual Impact",
-      content: "Combine polling of topics that matter to you with fundraising for causes you care about, with great user experience and dual impact. Every poll makes a difference, every comment counts, every vote matters, every dollar helps.",
+      content: "Combine polling of topics that matter to you with fundraising for causes you care about.",
       icon: image2,
       image: image9,
     },
     {
       title: "Play with Purpose.",
-      content: "Who said making a difference can't be fun? Gamify your polls and fundraising efforts for a unique and rewarding experience. Or have fun with popular polls and supporting meaningful causes at the same time.",
+      content: "Who said making a difference can't be fun? Gamify your polls and fundraising efforts for a unique and rewarding experience. Have fun with popular polls and supporting meaningful causes at the same time.",
       icon: image3,
       image: image10,
     },
     {
+      title: "The Media Meter: Real-time Reality Check.",
+      content: "Poll trending topics and measure opinions in news media and social media with public sentiment in real time.",
+      icon: image7,
+      image: image14,
+    },
+    {
       title: "The Power of Diverse Opinions.",
-      content: "Tap into a universe of voters across many social media and news media platforms to understand the real pulse of the people.",
+      content: "Tap into a universe of voters across many social media and news media platforms to measure the real pulse of the people.",
       icon: image5,
       image: image12,
     },
     {
       title: "From Influencer to Changemaker.",
-      content: "Transform your influence into real-world impact. Use your power as social media influencer to help shape the public discourse on topics that matter to us all and to support causes, we all care about.",
+      content: "Transform your influence into real-world impact. Use your power as a social media influencer to help shape the public discourse on topics that matter to us all and to support causes, we all care about.",
       icon: image6,
       image: image13,
     },
+
     {
       title: "Monetize Your Insights.",
       content: "Turn your interest in topics that matter to many of us into income. We empower creators of popular polls to monetize their content through tips and business sponsorships.",
+      icon: image3,
+      image: image10,
+    },
+
+    {
+      title: "Engage Your Audience, Elevate Your Brand.",
+      content: "Our platform allows businesses to sponsor influential authors and popular polls for targeted exposure and positive association.",
       icon: image7,
       image: image14,
     },
+    
+   
   ];
 
   return (
-    <div className="text-white overflow-hidden py-20 px-6 container mx-auto flex flex-col lg:flex-row items-center justify-between">
+    <div id="whatsnew" className="text-white overflow-hidden py-20 px-6 container mx-auto flex flex-col lg:flex-row items-center justify-between">
       {/* Accordion */}
       <motion.div
     initial={{ x: initialX, opacity: 0 }}

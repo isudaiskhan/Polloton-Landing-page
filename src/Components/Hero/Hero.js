@@ -45,8 +45,8 @@ const Hero = () => {
     ease: "easeIn",
     duration: 1
   }}
-    className='relative w-full px-4'>
-     <div className='container sm:px-8 px-4 mx-auto flex flex-col lg:flex-row'>
+    className='relative w-full px-2'>
+     <div className='container sm:px-8 px-2 mx-auto flex flex-col lg:flex-row'>
       <div className=' w-full md:mt-8'>
       <img src={herologo} className='sm:w-96 w-64 mx-auto' />
       <p className='text-lg font-medium font-family text-white mt-6 text-center'>Polling and fundraising for cause that matter.</p>
@@ -69,7 +69,7 @@ const Hero = () => {
   <p className='text-center mb-5'>
     Our application enables users to compare opinions in news and social media with public sentiment. Amplify your voice and your impact to shape insightful public discourse and to raise funds for causes that matter.
   </p>
-  <p className='text-center mb-2'>
+  <p className='text-center mb-2 sm:text-lg sm:font-family font-medium'>
     Start to monetize your passion today:
   </p>
   <div className='flex flex-wrap justify-center gap-x-2 sm:gap-x-6 text-center'>

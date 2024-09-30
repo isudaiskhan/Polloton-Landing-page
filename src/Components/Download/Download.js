@@ -36,8 +36,8 @@ const Download = () => {
          className="bg-[#1A1A1A] p-6 rounded-lg flex flex-col justify-between">
           <div>
             <h2 className="text-2xl font-medium font-family text-white mb-4">Download the App</h2>
-            <p className="text-gray-400 text-sm">
-            Take control of your daily activities and stay updated on the go. Download our app now and enjoy a seamless, user-friendly experience to help you manage everything at your fingertips. Available on both iOS and Android platforms.
+            <p className="text-gray-400">
+            Enjoy a new experience to feel the pulse of the people, to shape public opinion, and to drive positive change for causes that matter. Available on both IOS and Android platforms.
 
             </p>
           </div>
@@ -75,8 +75,8 @@ const Download = () => {
     className="bg-[#1A1A1A] p-6 md:space-x-3 rounded-lg flex flex-col md:flex-row justify-between">
    <div className="md:w-3/4 text-left">
     <h2 className="text-2xl font-medium text-white font-family mb-4">Scan QR Code</h2>
-    <p className="text-gray-400 text-sm">
-    Instantly access exclusive content or quickly download our app by scanning the QR code below. No need to type out links just scan and get started in seconds, whether you're using your smartphone or tablet.
+    <p className="text-gray-400">
+    No needs to type out links. Just scan and get started in seconds. Works with any smartphone or tablet.
 
     </p>
   </div>
