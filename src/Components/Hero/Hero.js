@@ -28,6 +28,13 @@ const Hero = () => {
 
   const initialX = windowSize.width >= 640 ? -300 : -170;
 
+  const scrollToDownload = () => {
+    const downloadSection = document.getElementById('download');
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <>
@@ -46,13 +53,13 @@ const Hero = () => {
   }}
     className='relative w-full px-2'>
      <div className='container sm:px-8 px-2 mx-auto flex flex-col lg:flex-row'>
-      <div className=' w-full md:mt-8'>
-      <img src={herologo} className='sm:w-96 w-64 mx-auto' />
-      <p className='text-lg font-medium font-family text-white mt-6 text-center'>Polling and fundraising for cause that matter.</p>
-      <div className='text-white xl:px-52 lg:px-36 mt-6'>
-      <p className='text-center mb-5'>
+      <div className=' w-full md:mt-5'>
+      <p className='text-lg font-medium font-family text-white text-center'>Polling and fundraising for cause that matter.</p>
+      <p className='text-center text-white mb-5 xl:px-52 lg:px-36 mt-6'>
         Our application enables users to compare opinions in news and social media with public sentiment. Amplify your voice and your impact to shape insightful public discourse and to raise funds for causes that matter.
       </p>
+      <img src={herologo} className='sm:w-96 w-64 mx-auto' />
+      <div className='text-white xl:px-52 lg:px-36 mt-6'>
       <p className='text-center mb-2 sm:text-lg sm:font-family font-medium'>
         Start to monetize your passion today:
   </p>
@@ -90,7 +97,8 @@ const Hero = () => {
 
     <div className='flex lg:justify-start mt-3 md:justify-center'>
      
-     <button
+    <button
+     onClick={scrollToDownload}
      className="group/button relative inline-flex items-center mx-auto mt-6 justify-center overflow-hidden rounded-full bg-gradient-to-r from-[#B60095] to-[#6122ED] hover:bg-gradient-to-r hover:from-[#6122ED] hover:to-[#B60095]
      text-white backdrop-blur-lg px-5 py-3 text-base font-semibold transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-[#B60095]"
      >

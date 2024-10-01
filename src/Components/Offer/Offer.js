@@ -7,15 +7,17 @@ import image4 from '../Assets/Vector (4).png';
 import image5 from '../Assets/Vector (5).png';
 import image6 from '../Assets/Vector (6).png';
 import image7 from '../Assets/Vector (7).png';
-import image8 from '../Assets/hoverImage (1).png';
-import image9 from '../Assets/hoverImage (2).png';
-import image10 from '../Assets/hoverImage (3).png';
-import image11 from '../Assets/hoverImage (1).png';
-import image12 from '../Assets/hoverImage (2).png';
-import image13 from '../Assets/hoverImage (3).png';
-import image14 from '../Assets/hoverImage (1).png';
+import image8 from '../Assets/offer1.png';
+import image9 from '../Assets/offer2.png';
+import image10 from '../Assets/offer3.png';
+import image11 from '../Assets/offer4.png';
+import image12 from '../Assets/offer5.png';
+import image13 from '../Assets/offer6.png';
+import image14 from '../Assets/offer7.png';
 import { motion } from "framer-motion";
 import image15 from '../Assets/Vector (8).png';
+import image16 from '../Assets/offer8.png';
+
 
 
 const AccordionItem = ({ title, icon, isActive, onMouseEnter, onMouseLeave }) => {
@@ -95,7 +97,7 @@ const Offer = () => {
         {
           title: "Build and keep in touch with a diverse, insightful and passionate community of influencers and changemakers.",
           icon: image15,
-          image: image9,
+          image: image16,
         },
       ];
 

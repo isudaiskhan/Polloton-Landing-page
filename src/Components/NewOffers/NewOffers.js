@@ -188,5 +188,3 @@ const NewOffers = () => {
 };
 
 export default NewOffers;
-
-
