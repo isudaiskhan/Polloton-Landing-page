@@ -70,7 +70,7 @@ const Navbar = () => {
     <>
       <nav className={`fixed top-0 w-full border-b border-b-[#6122ED] z-50 transition duration-300 ${hasScrolled ? 'bg-[#13072E]' : ''} ${hasScrolled && window.scrollY > 10 ? 'top-0 shadow-xl' : ''}`}>
         <div className="relative max-w-[1240px] mx-auto sm:ps-9 sm:pe-9 ps-5 pe-5 xl:ps-0 xl:pe-0">
-          <div className="md:py-4 py-6 mx-auto flex items-center justify-between xl:justify-start">
+          <div className="py-4 mx-auto flex items-center justify-between xl:justify-start">
             <div className="cursor-pointer">
               <img src={footerlogo} className='w-36' />
             </div>
