@@ -1,8 +1,9 @@
 import React,{useState , useEffect} from 'react'
 import {FaFacebook, FaYoutube } from 'react-icons/fa';
-import {AiOutlineTwitter, AiFillLinkedin} from 'react-icons/ai';
+import { AiFillLinkedin } from 'react-icons/ai';
 import footerlogo from '../Assets/Vector.png'
 import {motion} from 'framer-motion';
+import { FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -122,7 +123,7 @@ const Footer = () => {
         <div className='flex justify-end text-white space-x-5 flex-wrap ps-1'>
                       <FaFacebook className='cursor-pointer text-[#9255E0] text-xl' />
 
-                      <AiOutlineTwitter className='cursor-pointer text-[#9255E0] text-xl' />
+                      <FaXTwitter className='cursor-pointer text-[#9255E0] text-xl' />
   
                       <FaYoutube className='cursor-pointer text-[#9255E0] text-xl' />
   
