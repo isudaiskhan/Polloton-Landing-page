@@ -144,7 +144,7 @@ const Offer = () => {
           <img
             src={activeImage}
             alt="Hand Graphic"
-            className="max-h-[32rem] transition-all duration-500 ease-in-out"
+            className="max-h-[32rem]"
             onError={handleImageError}
           />
         </motion.div>
