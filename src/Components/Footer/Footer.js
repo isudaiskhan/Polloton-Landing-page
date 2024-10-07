@@ -120,20 +120,62 @@ const Footer = () => {
             
             <div className="flex items-center justify-start">
         <div className='md:flex items-center py-6 text-center'>
-        <div className='flex justify-end text-white space-x-5 flex-wrap ps-1'>
-                      <FaFacebook className='cursor-pointer text-[#9255E0] text-xl' />
+        <div className='flex justify-end text-white xl:space-x-5 lg:space-x-3 space-x-5 flex-wrap'>
+  <div>
+    <button className="relative w-8 h-8 rounded-full group">
+      <div
+        className="w-full h-full absolute top-0 left-0 bg-[#9255E0] rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
+      ></div>
+      <div
+        className="relative z-10 w-full h-full flex items-center justify-center border-2 border-[#9255E0] rounded-full"
+      >
+         <FaFacebook className='cursor-pointer text-white text-xl' /> 
 
-                      <FaXTwitter className='cursor-pointer text-[#9255E0] text-xl' />
-  
-                      <FaYoutube className='cursor-pointer text-[#9255E0] text-xl' />
-  
-                      <AiFillLinkedin className='cursor-pointer text-[#9255E0] text-xl' />
+      </div>
+    </button>
+  </div>
+  <div>
+    <button className="relative w-8 h-8 rounded-full group">
+      <div
+        className="w-full h-full absolute top-0 left-0 bg-[#9255E0] rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
+      ></div>
+      <div
+        className="relative z-10 w-full h-full flex items-center justify-center border-2 border-[#9255E0] rounded-full"
+      >
+       <FaXTwitter className='cursor-pointer text-white text-xl' />
+      </div>
+    </button>
+  </div>
+  <div>
+    <button className="relative w-8 h-8 rounded-full group">
+      <div
+        className="w-full h-full absolute top-0 left-0 bg-[#9255E0] rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
+      ></div>
+      <div
+        className="relative z-10 w-full h-full flex items-center justify-center border-2 border-[#9255E0] rounded-full"
+      >
+        <FaYoutube className='cursor-pointer text-white text-xl' />
+      </div>
+    </button>
+  </div>
+  <div>
+    <button className="relative w-8 h-8 rounded-full group">
+      <div
+        className="w-full h-full absolute top-0 left-0 bg-[#9255E0] rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
+      ></div>
+      <div
+        className="relative z-10 w-full h-full flex items-center justify-center border-2 border-[#9255E0] rounded-full"
+      >
+        <AiFillLinkedin className='cursor-pointer text-white text-xl' />
+      </div>
+    </button>
+  </div>
+</div>
+
               </div>
              
           </div>
       </div>
-
-                </div>
             </motion.div>
 
                 </div>
