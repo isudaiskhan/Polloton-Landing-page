@@ -154,7 +154,7 @@ const NewOffers = () => {
     duration: 1
   }}
        className="w-full lg:w-1/2 mb-12 lg:mb-0">
-        <h2 className="text-3xl font-medium font-family mb-6">What's new?</h2>
+        <h2 className="text-3xl font-medium font-family mb-6 mt-5">What's new?</h2>
         <div className="space-y-4">
           {items.map((item, index) => (
             <AccordionItem
