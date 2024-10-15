@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaFacebook, FaYoutube } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';
 import footerlogo from '../Assets/Vector.png';
@@ -13,6 +13,8 @@ const Footer = () => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
+
+  const modalRef = useRef(null); // Create a ref for the modal
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,6 +37,21 @@ const Footer = () => {
     setIsModalOpen(false);
     setModalContent('');
   };
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      window.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      window.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isModalOpen]);
 
   const initialXLeft = windowSize.width >= 640 ? -200 : -100;
   const initialXRight = windowSize.width >= 640 ? 200 : 100;
@@ -1660,6 +1677,7 @@ services;</p>
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex px-4 justify-center items-center">
             <motion.div
+              ref={modalRef}
               className="bg-[#000000c7] text-white p-5 rounded-md shadow-md max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
