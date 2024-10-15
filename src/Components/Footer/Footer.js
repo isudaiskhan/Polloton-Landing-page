@@ -1040,9 +1040,9 @@ const Footer = () => {
                     <h1 class="font-medium text-lg">Community Guidelines</h1>
 
                     <b> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
-you have read, understood, and agree to be bound by and adhere to these
-Community Guidelines and all Policies and Terms incorporated by reference. If you
-do not agree to these Terms, do not access or use our Services.</p>
+                    you have read, understood, and agree to be bound by and adhere to these
+                    Community Guidelines and all Policies and Terms incorporated by reference. If you
+                    do not agree to these Terms, do not access or use our Services.</p>
 
 
                     <b> 2. Poll with Purpose: </b> <p> Create polls that elevate meaningful conversations and
@@ -1050,142 +1050,142 @@ do not agree to these Terms, do not access or use our Services.</p>
                     opinions.</p>
 
                     <b> 3. Fair Participation: </b> <p> Participate in polls fairly and honestly. Do not manipulate poll
-outcomes through fraudulent means, such as using multiple accounts or
-encouraging others to do so. </p>
+                      outcomes through fraudulent means, such as using multiple accounts or
+                      encouraging others to do so. </p>
 
                     <b> 4. Fundraising and Charitable Causes: </b> <p> Be transparent about the goals and
-beneficiaries of any fundraising activities. Provide clear and accurate information
-about how funds will be used. Ensure that all charitable causes and fundraising
-activities are legitimate and that funds are used as promised.</p>
+                    beneficiaries of any fundraising activities. Provide clear and accurate information
+                    about how funds will be used. Ensure that all charitable causes and fundraising
+                    activities are legitimate and that funds are used as promised.</p>
 
 
                     <b> 5. Accuracy and Authenticity: </b> <p> Company is a platform for accurate and verified
-information. We strive to ensure our listings are 100% correct, timely, and up-to-date.
-If you're contributing to our database, ensure your postings are true and confirmed. If
-incorrect information is spotted, correct it or notify us via support@polloton.com.
-Repeatedly adding false information will lead to account action, including potential
-deletion.</p>
+                    information. We strive to ensure our listings are 100% correct, timely, and up-to-date.
+                    If you're contributing to our database, ensure your postings are true and confirmed. If
+                    incorrect information is spotted, correct it or notify us via support@polloton.com.
+                    Repeatedly adding false information will lead to account action, including potential
+                    deletion.</p>
 
 
                     <b> 6. Credible Information: </b> <p> Share information from credible sources. Avoid spreading
-misinformation or unverified claims. If you discover that you have shared incorrect
-information, correct it promptly.</p>
+                    misinformation or unverified claims. If you discover that you have shared incorrect
+                    information, correct it promptly.</p>
 
 
                     <b> 7. Clean Content: </b> <p> Ensure that all content you share is appropriate for a diverse
-audience. This includes avoiding content that is explicit, obscene, or otherwise
-unsuitable for public sharing. Company is not a place for pornography or illegal
-material. Do not post sexually explicit or illegal material anywhere on the platform.</p>
+                    audience. This includes avoiding content that is explicit, obscene, or otherwise
+                    unsuitable for public sharing. Company is not a place for pornography or illegal
+                    material. Do not post sexually explicit or illegal material anywhere on the platform.</p>
 
 
                     <b> 8. Honesty: </b> <p> Be honest and transparent in your interactions. Do not misrepresent
-yourself or your intentions.</p>
+                      yourself or your intentions.</p>
 
 
                     <b> 9. Intellectual Property: </b> <p> Only share content that you have the right to share. Do not
-plagiarize or share content that infringes on the intellectual property rights of others.
-When adding photos, posters, and videos to Company, please refrain from
-uploading copyrighted content without permission from the owner. If your content is
-being used without your consent, contact us at support@polloton.com.</p>
+                    plagiarize or share content that infringes on the intellectual property rights of others.
+                    When adding photos, posters, and videos to Company, please refrain from
+                    uploading copyrighted content without permission from the owner. If your content is
+                    being used without your consent, contact us at support@polloton.com.</p>
 
                     <b> 10. Respectful Interaction:</b>
                     <p> 
                     Treat all members with respect. Harassment,
-discrimination, bullying, or any form of abuse is not tolerated. We strive for a
-positive, diverse community. We encourage diverse viewpoints but expect them to
-be expressed politely and considerately. Hateful, racist, sexist, or harassing
-language is strictly prohibited. This includes comments or content that is offensive,
-threatening, or discriminatory based on race, ethnicity, national origin, religion,
-gender, sexual orientation, disability, or any other characteristic. We remove content
-that contains credible threats or hate speech, content that targets private individuals
-to degrade or shame them, personal information meant to blackmail or harass
-someone, and repeated unwanted messages.
+                      discrimination, bullying, or any form of abuse is not tolerated. We strive for a
+                      positive, diverse community. We encourage diverse viewpoints but expect them to
+                      be expressed politely and considerately. Hateful, racist, sexist, or harassing
+                      language is strictly prohibited. This includes comments or content that is offensive,
+                      threatening, or discriminatory based on race, ethnicity, national origin, religion,
+                      gender, sexual orientation, disability, or any other characteristic. We remove content
+                      that contains credible threats or hate speech, content that targets private individuals
+                      to degrade or shame them, personal information meant to blackmail or harass
+                      someone, and repeated unwanted messages.
                     </p>
 
                     <b> 11. Constructive Engagement:</b>
                     <p> 
                     Engage in discussions and debates constructively.
-Focus on the content of the conversation, not the personalities involved. Personal
-attacks and name-calling are not allowed.
+                    Focus on the content of the conversation, not the personalities involved. Personal
+                    attacks and name-calling are not allowed.
                     </p>
 
                     <b> 12. Provide Feedback:</b>
                     <p> 
                     Feedback from the community is essential for improving
-product offerings and user experiences, addressing concerns related to transactions,
-interactions, or content, enhancing safety measures and community trust. Users can
-submit feedback through feedback forms available on our website and apps,
-community forums designated for user discussions and feedback, Direct
-communication with customer support for specific issues.
+                    product offerings and user experiences, addressing concerns related to transactions,
+                    interactions, or content, enhancing safety measures and community trust. Users can
+                    submit feedback through feedback forms available on our website and apps,
+                    community forums designated for user discussions and feedback, Direct
+                    communication with customer support for specific issues.
                     </p>
 
 
                     <b> 13. Be Respectful and Constructive:</b>
                     <p> 
                     When providing feedback, users are encouraged
-to be clear, constructive, and specific to ensure that issues can be effectively
-addressed, include relevant details such as timestamps, descriptions of the issue,
-and suggestions for improvement, if applicable, and remain respectful and courteous
-towards community members and our team.
+                      to be clear, constructive, and specific to ensure that issues can be effectively
+                      addressed, include relevant details such as timestamps, descriptions of the issue,
+                      and suggestions for improvement, if applicable, and remain respectful and courteous
+                      towards community members and our team.
                     </p>
 
 
                 <b> 14. No Violence and Criminal Behavior:</b> <p> 
                 Any content promoting violence, harm, or
-criminal behavior is strictly prohibited. This includes terrorism, organized crime, or
-hate groups and offering sexual services, buying or selling firearms, alcohol, tobacco
-products, and non-medical, pharmaceutical drugs and all prohibited behavior listed
-in our Prohibited Behavior Policy.
+                criminal behavior is strictly prohibited. This includes terrorism, organized crime, or
+                hate groups and offering sexual services, buying or selling firearms, alcohol, tobacco
+                products, and non-medical, pharmaceutical drugs and all prohibited behavior listed
+                in our Prohibited Behavior Policy.
                 </p>
 
 
                 <b> 15. Safety and Privacy:</b> <p> 
                 We're committed to making Company a safe place and
-protecting personal privacy and information. Do not share personal information of
-others without their consent. This includes addresses, phone numbers, email
-addresses, and any other private information. Respect the confidentiality of private
-communications and content meant for closed groups or private polls. Content that
-threatens people or violates privacy is not allowed.
+                protecting personal privacy and information. Do not share personal information of
+                others without their consent. This includes addresses, phone numbers, email
+                addresses, and any other private information. Respect the confidentiality of private
+                communications and content meant for closed groups or private polls. Content that
+                threatens people or violates privacy is not allowed.
                 </p>
 
 
                 <b>16. No Spamming or Misuse:</b>
                 <p> Company is for sharing information, not spamming, or
-misusing for commercial gain. Avoid posting repetitive content, advertisements, or
-spam. This includes unsolicited promotion of products, services, or other websites.
+                misusing for commercial gain. Avoid posting repetitive content, advertisements, or
+                spam. This includes unsolicited promotion of products, services, or other websites.
                 </p>
               
 
                 <b> 17. Promote Company: </b> <p> If you're enjoying the Company experience, spread the word!
-More people using Company means more people get relevant, real and high-quality
-information to make better decisions on topics that really matter in life. The world will
-be a better, happier, smarter place as a result.</p>
+                More people using Company means more people get relevant, real and high-quality
+                information to make better decisions on topics that really matter in life. The world will
+                be a better, happier, smarter place as a result.</p>
 
                 <b> 18. Reporting: </b> <p> YIf you encounter content violating these guidelines, please report it using
-the built-in reporting options. If you encounter behavior or content that violates these
-Community Guidelines, please report it to Companys support team. Use the &quot;Report
-Abuse&quot; option available on the platform.</p>
+                  the built-in reporting options. If you encounter behavior or content that violates these
+                  Community Guidelines, please report it to Companys support team. Use the &quot;Report
+                  Abuse&quot; option available on the platform.</p>
 
                 <b> 19. Enforcement: </b> <p>  Violations of these Community Guidelines may result in actions taken
-by Company, including but not limited to warnings, content removal, account
-suspension, or permanent banning from the Services. In cases of severe violations,
-Company reserves the right to cooperate with law enforcement authorities. For
-misunderstandings or disputes, consider resolving them directly with other users. If
-your content is used without permission, file a copyright or trademark report. We
-may cooperate with law enforcement when necessary to ensure safety and security.</p>
+                by Company, including but not limited to warnings, content removal, account
+                suspension, or permanent banning from the Services. In cases of severe violations,
+                Company reserves the right to cooperate with law enforcement authorities. For
+                misunderstandings or disputes, consider resolving them directly with other users. If
+                your content is used without permission, file a copyright or trademark report. We
+                may cooperate with law enforcement when necessary to ensure safety and security.</p>
 
                 <b> 20. Amendments. </b> <p> We may update these Community Guidelines from time to time to
-reflect changes in Services, operations, business practices, industry standards,
-community needs, legal standards, or other regulations. When we make changes,
-we will post the updated policy on this page and update the &quot;Last Updated&quot; date at
-the top. If we make material changes to these Terms, we will notify you by email or
-by posting a notice on our Services. Your continued use of our Services after any
-such change constitutes your acceptance of the new Terms. We encourage our
-users to review these Community Guidelines periodically to stay informed about our
-use of cookies and related technologies.</p>
+                reflect changes in Services, operations, business practices, industry standards,
+                community needs, legal standards, or other regulations. When we make changes,
+                we will post the updated policy on this page and update the &quot;Last Updated&quot; date at
+                the top. If we make material changes to these Terms, we will notify you by email or
+                by posting a notice on our Services. Your continued use of our Services after any
+                such change constitutes your acceptance of the new Terms. We encourage our
+                users to review these Community Guidelines periodically to stay informed about our
+                use of cookies and related technologies.</p>
 
                 <b> 21. Contact us: </b> <p>If you have any questions about our Community Guidelines, please
-email us at support@polloton.com.</p>`
+                email us at support@polloton.com.</p>`
                   )} >Community Guidelines</li>
 
 
@@ -1198,27 +1198,27 @@ email us at support@polloton.com.</p>`
                     <h1 class="font-medium text-lg">Prohibited Behavior Policy</h1>
 
                     <b> 1. Acceptance of Terms. </b> <p> By accessing or using our Services, you acknowledge
-that you have read, understood, and agree to be bound by and adhere to this
-Prohibited Content Policy and all Policies and Terms incorporated by reference. If
-you do not agree to these Terms, do not access or use our Services.</p>
+                    that you have read, understood, and agree to be bound by and adhere to this
+                    Prohibited Content Policy and all Policies and Terms incorporated by reference. If
+                    you do not agree to these Terms, do not access or use our Services.</p>
 
 
                     <p> 2. The following are examples of User Content and/or use that is illegal or
-prohibited by Company. This list is not exhaustive, and we reserve the right to
-remove any poll or fundraising campaign and/or investigate any User who, in our
-sole discretion, violates any of the terms or spirit of these Terms. As we
-investigate your poll, fundraising campaign, User, or User Content, we may
-consider all available material, including, but not limited to, social media, related
-news, and any other information that we, in our sole discretion, deem relevant in
-our review. We further reserve the right, without limitation, to ban or disable your
-use of the Services, remove the offending User Content, suspend or terminate
-your account, stop payments to any such fundraising campaign, freeze or place a
-hold on donations, and report you to law enforcement authorities or otherwise
-take appropriate legal action including seeking restitution on behalf of ourselves
-and/or our Users.</p>
-<p>Without limiting the foregoing, you agree not to use the Services to create polls,
-raise funds, Upload User Content or establish or contribute to any poll or
-fundraising campaign with the implicit or explicit purpose of or involving:</p>
+                      prohibited by Company. This list is not exhaustive, and we reserve the right to
+                      remove any poll or fundraising campaign and/or investigate any User who, in our
+                      sole discretion, violates any of the terms or spirit of these Terms. As we
+                      investigate your poll, fundraising campaign, User, or User Content, we may
+                      consider all available material, including, but not limited to, social media, related
+                      news, and any other information that we, in our sole discretion, deem relevant in
+                      our review. We further reserve the right, without limitation, to ban or disable your
+                      use of the Services, remove the offending User Content, suspend or terminate
+                      your account, stop payments to any such fundraising campaign, freeze or place a
+                      hold on donations, and report you to law enforcement authorities or otherwise
+                      take appropriate legal action including seeking restitution on behalf of ourselves
+                      and/or our Users.</p>
+                      <p>Without limiting the foregoing, you agree not to use the Services to create polls,
+                      raise funds, Upload User Content or establish or contribute to any poll or
+                      fundraising campaign with the implicit or explicit purpose of or involving:</p>
 
 <ul class="list-disc pl-3">
     <li>
@@ -1273,9 +1273,9 @@ item;</p>
     <li>
         <b>Intellectual Property Violations.</b>
         <p>Content, products or services that infringe
-or facilitate infringement upon the trademark, patent, copyright, trade secrets,
-or proprietary or privacy rights of any third party, including unauthorized use of
-copyrighted or trademarked materials.</p>
+        or facilitate infringement upon the trademark, patent, copyright, trade secrets,
+        or proprietary or privacy rights of any third party, including unauthorized use of
+        copyrighted or trademarked materials.</p>
     </li>
 
 
@@ -1283,8 +1283,8 @@ copyrighted or trademarked materials.</p>
     <li>
         <b>No-value-added services:</b>
         <p>sale or resale of a service without added benefit
-to the buyer or resale of government offerings without authorization or added
-value;</p>
+        to the buyer or resale of government offerings without authorization or added
+        value;</p>
     </li>
 
 
@@ -1303,82 +1303,82 @@ services;</p>
     <li>
         <b>Piracy:</b>
         <p>counterfeit music, movies, software, or other licensed materials
-without the appropriate authorization from the rights holder;</p>
+      without the appropriate authorization from the rights holder;</p>
     </li>
 
     <li>
         <b>Sale, Use or Promotion of Illegal Drugs:</b>
         <p>narcotics, steroids, controlled
-substances, abuse of pharmaceuticals or similar products or therapies that
-are either illegal or prohibited;</p>
+      substances, abuse of pharmaceuticals or similar products or therapies that
+      are either illegal or prohibited;</p>
     </li>
 
 
     <li>
         <b>Nudity and Sexual Content:</b>
         <p>Any form of pornography; Content that sexually
-exploits or endangers children and adults, including sexual content relating to
-minors or persons appearing to possibly be minors; Content that promotes
-dating or sexual services;</p>
+        exploits or endangers children and adults, including sexual content relating to
+        minors or persons appearing to possibly be minors; Content that promotes
+        dating or sexual services;</p>
     </li>
 
 
     <li>
         <b>Regulated Goods or Services:</b>
         <p>Content that attempts to sell or trade non-
-medical drugs, pharmaceuticals, marijuana, or firearms, ammunition, and
-explosives.</p>
+        medical drugs, pharmaceuticals, marijuana, or firearms, ammunition, and
+        explosives.</p>
     </li>
 
 
     <li>
         <b>Violence and Graphic Content:</b>
         <p>Knives, or other weaponry or accessories;
-the promotion of violent ideas such as genocide, execution, and other violent
-acts; Offensive, graphic, perverse or sensitive content; Content that glorifies
-violence or celebrates suffering or humiliation; Real-life graphic or gratuitous
-violence; Animal cruelty or extreme violence towards animals;</p>
+        the promotion of violent ideas such as genocide, execution, and other violent
+        acts; Offensive, graphic, perverse or sensitive content; Content that glorifies
+        violence or celebrates suffering or humiliation; Real-life graphic or gratuitous
+        violence; Animal cruelty or extreme violence towards animals;</p>
     </li>
 
     <li>
         <b>Promotion of Harmful or Dangerous Activities:</b>
         <p>Content encouraging
-physical challenges that have inherent risks of physical harm, self-injury or
-eating disorders.</p>
+        physical challenges that have inherent risks of physical harm, self-injury or
+        eating disorders.</p>
     </li>
 
     <li>
         <b>Discrimination and Hate Speech:</b>
         <p>Content that directly attacks or demeans
-individuals or groups based on attributes such as race, ethnicity, national
-origin, religious affiliation, mental, physical, or medical conditions or
-disabilities, disease, age, sexual orientation, sex, gender, or gender identity.</p>
+        individuals or groups based on attributes such as race, ethnicity, national
+        origin, religious affiliation, mental, physical, or medical conditions or
+        disabilities, disease, age, sexual orientation, sex, gender, or gender identity.</p>
     </li>
 
 
       <li>
         <b>Regulated Goods or Services:</b>
         <p>Content that attempts to sell or trade non-medical drugs, pharmaceuticals, marijuana, or firearms, ammunition, and
-explosives.</p>
+        explosives.</p>
     </li>
 
 
     <li>
         <b>Slander, Harassment, and Bullying:</b>
         <p>Content meant to harass or bully
-individuals or legal entities, including: Personal attacks, defamation, or
-slander, where the primary purpose of posting such User Content is to cause
-or raise concerns of reputational harm, as well as personal attacks, slurs,
-caustic or combative content submitted with the aim of harming other people
-in some way; Encouraging others to harass individuals both on and off our
-platforms; Sharing private or confidential information without consent.</p>
+        individuals or legal entities, including: Personal attacks, defamation, or
+        slander, where the primary purpose of posting such User Content is to cause
+        or raise concerns of reputational harm, as well as personal attacks, slurs,
+        caustic or combative content submitted with the aim of harming other people
+        in some way; Encouraging others to harass individuals both on and off our
+        platforms; Sharing private or confidential information without consent.</p>
     </li>
 
 
     <li>
         <b>Exploitation:</b>
         <p>funding a ransom, human trafficking or exploitation, vigilantism,
-bribes or bounty;</p>
+          bribes or bounty;</p>
     </li>
 
 
@@ -1386,11 +1386,11 @@ bribes or bounty;</p>
     <li>
         <b>Legal defense for serious crimes:</b>
         <p>campaigns for the legal defense of
-alleged crimes associated with hate, violence, harassment, bullying,
-discrimination, terrorism, or intolerance of any kind relating to race, ethnicity,
-national origin, religious affiliation, sexual orientation, sex, gender or gender
-identity, mental, physical, or other medical conditions, or financial crimes or
-crimes of deception;</p>
+        alleged crimes associated with hate, violence, harassment, bullying,
+        discrimination, terrorism, or intolerance of any kind relating to race, ethnicity,
+        national origin, religious affiliation, sexual orientation, sex, gender or gender
+        identity, mental, physical, or other medical conditions, or financial crimes or
+        crimes of deception;</p>
     </li>
 
 
@@ -1399,9 +1399,9 @@ crimes of deception;</p>
     <li>
         <b>International sanctions:</b>
         <p>activities with, in, or involving countries, regions,
-governments, persons, or entities that are subject to U.S. and other economic
-sanctions under applicable law, unless such activities are expressly
-authorized by the appropriate governmental authority;</p>
+        governments, persons, or entities that are subject to U.S. and other economic
+        sanctions under applicable law, unless such activities are expressly
+        authorized by the appropriate governmental authority;</p>
     </li>
 
 
@@ -1420,37 +1420,37 @@ authorized by the appropriate governmental authority;</p>
     <li>
         <b>Gambling:</b>
         <p>casino games, sports betting, fantasy sports, horse or greyhound
-racing, lottery tickets, and other ventures that facilitate gambling, games of
-skill or chance (whether or not it is legally defined as a lottery), promotions
-involving monetary rewards, including gift cards, or sweepstakes;</p>
+        racing, lottery tickets, and other ventures that facilitate gambling, games of
+        skill or chance (whether or not it is legally defined as a lottery), promotions
+        involving monetary rewards, including gift cards, or sweepstakes;</p>
     </li>
 
     <li>
         <b>Misinformation and False News:</b>
         <p>Content that promotes false claims or
-conspiracy theories that may cause harm; Misinformation that could disrupt
-public safety or undermine civic processes;</p>
+        conspiracy theories that may cause harm; Misinformation that could disrupt
+        public safety or undermine civic processes;</p>
     </li>
 
 
     <li>
         <b>Manipulated Media:</b>
         <p>Content manipulated to deceive or mislead; Deepfake
-videos and other forms of synthetically altered media, especially those that
-could harm user trust;</p>
+          videos and other forms of synthetically altered media, especially those that
+          could harm user trust;</p>
     </li>
 
     <li>
         <b>Spam and Malicious Content:</b>
         <p>Unsolicited mass communication or
-advertisements; Content intended to deceive or mislead recipients; Malicious
-software or links to malware;</p>
+        advertisements; Content intended to deceive or mislead recipients; Malicious
+        software or links to malware;</p>
     </li>
 
     <li>
         <b>Generally unacceptable activity:</b>
         <p>any other activity that Company may
-deem in its sole discretion to be unacceptable.</p>
+        deem in its sole discretion to be unacceptable.</p>
     </li>
 
 </ul>
@@ -1463,141 +1463,132 @@ deem in its sole discretion to be unacceptable.</p>
 
 
 
-<b> 2. Enforcement and Reporting. </b> <p> Violations of this policy may lead to content
-removal, restrictions on account capabilities, or account termination. Users can
-report violations using our provided reporting tools or by contacting our support
-staff at support@polloton.com. </p>
+        <b> 2. Enforcement and Reporting. </b> <p> Violations of this policy may lead to content
+        removal, restrictions on account capabilities, or account termination. Users can
+        report violations using our provided reporting tools or by contacting our support
+        staff at support@polloton.com. </p>
 
                     <b> 3. Amendments. </b> <p> We may update this Prohibited Content Policy from time to time
-to reflect changes in Services, operations, business practices, industry
-standards, community needs, legal standards, or other regulations. When we
-make changes, we will post the updated policy on this page and update the &quot;Last
-Updated&quot; date at the top. If we make material changes to these Terms, we will
-notify you by email or by posting a notice on our Services. Your continued use of
-our Services after any such change constitutes your acceptance of the new
-Terms. We encourage our users to review this Prohibited Content Policy
-periodically to stay informed about our use of cookies and related technologies.</p>
+                to reflect changes in Services, operations, business practices, industry
+                standards, community needs, legal standards, or other regulations. When we
+                make changes, we will post the updated policy on this page and update the &quot;Last
+                Updated&quot; date at the top. If we make material changes to these Terms, we will
+                notify you by email or by posting a notice on our Services. Your continued use of
+                our Services after any such change constitutes your acceptance of the new
+                Terms. We encourage our users to review this Prohibited Content Policy
+                periodically to stay informed about our use of cookies and related technologies.</p>
 
-<b> 4. Contact us: </b> <p> If you have any questions about our Prohibited Content Policy,
-please email us at  support@polloton.com.</p>`)}
+                  <b> 4. Contact us: </b> <p> If you have any questions about our Prohibited Content Policy,
+                  please email us at  support@polloton.com.</p>`)}
                 >Prohibited Behavior Policy</li>
-
-
-
-
-
-
-
-
-
 
                 <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
                   onClick={() => openModal(`
                     <h1 class="font-medium text-lg">Restricted Behavior Policy</h1>
 
                     <b> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
-you have read, understood, and agree to be bound by and adhere to this Restricted
-Content Policy and all Policies and Terms incorporated by reference. If you do not
-agree to these Terms, do not access or use our Services.</p>
+                    you have read, understood, and agree to be bound by and adhere to this Restricted
+                    Content Policy and all Policies and Terms incorporated by reference. If you do not
+                    agree to these Terms, do not access or use our Services.</p>
 
 
                     <b> 2. Alcohol. </b> <p> Content promoting the sale of alcohol must comply with all applicable laws,
-including age restrictions and marketing standards. Promotions should not
-encourage excessive or irresponsible consumption.</p>
+                    including age restrictions and marketing standards. Promotions should not
+                    encourage excessive or irresponsible consumption.</p>
 
                     <b> 3. Tobacco and Vaping Products. </b> <p> Promotions or sales of tobacco products and e-
-cigarettes are restricted. Any promotional content must not target minors and must
-adhere to health and safety guidelines. </p>
+                      cigarettes are restricted. Any promotional content must not target minors and must
+                      adhere to health and safety guidelines. </p>
 
                     <b> 4. Dating Services. </b> <p> Dating services must prioritize user safety and must not be
-deceptive or lead to scams. These services must implement proper age verification
-processes and provide clear guidelines on safe dating practices.</p>
+                    deceptive or lead to scams. These services must implement proper age verification
+                    processes and provide clear guidelines on safe dating practices.</p>
 
 
                     <b> 5. Dietary Supplements. </b> <p> Promotions for dietary supplements must not contain
-misleading claims regarding health benefits and must not promote products not
-approved by relevant health authorities.</p>
+                    misleading claims regarding health benefits and must not promote products not
+                    approved by relevant health authorities.</p>
 
 
                     <b> 6. Financial Services and Insurance Products. </b> <p> Content related to financial services
-and insurance products, such as loans, investment advice, insurance, and credit
-card applications, must be clear, fair, and not misleading. Providers must be
-authorized or licensed by appropriate regulatory bodies and must provide
-transparency about terms, risks, and conditions.</p>
+                    and insurance products, such as loans, investment advice, insurance, and credit
+                    card applications, must be clear, fair, and not misleading. Providers must be
+                    authorized or licensed by appropriate regulatory bodies and must provide
+                    transparency about terms, risks, and conditions.</p>
 
 
                     <b> 7. Health and Medical Products. </b> <p> Promotions for medical products and services must
-have authorization from relevant health authorities. Claims must be supported by
-scientific evidence, and content must not exploit health-related anxieties.</p>
+                    have authorization from relevant health authorities. Claims must be supported by
+                    scientific evidence, and content must not exploit health-related anxieties.</p>
 
 
                     <b> 8. Cosmetic Procedures and Weight Loss. </b> <p> Content promoting cosmetic interventions
-and weight loss products must be responsible and scientifically supported. Claims
-about results must be realistic and not exploit body image insecurities.</p>
+                    and weight loss products must be responsible and scientifically supported. Claims
+                    about results must be realistic and not exploit body image insecurities.</p>
 
 
                     <b> 9. Family Planning and Contraception. </b> <p> Content related to family planning and
-contraception must be factual and not misleading. It should provide accurate
-information about the effectiveness and side effects of products.</p>
+                  contraception must be factual and not misleading. It should provide accurate
+                  information about the effectiveness and side effects of products.</p>
 
                     <b> 10. Pharmacies and Prescription Drugs.</b>
                     <p> 
                     Content promoting or selling prescription
-drugs must only be from entities that are properly licensed. Promotion of online
-pharmacies must ensure that they comply with all regulatory requirements, including
-verification of prescriptions.
+                  drugs must only be from entities that are properly licensed. Promotion of online
+                  pharmacies must ensure that they comply with all regulatory requirements, including
+                  verification of prescriptions.
                     </p>
 
                     <b> 11. Cryptocurrency Products and Services.</b>
                     <p> 
                     Promotions or advice regarding
-cryptocurrency must provide clear information about risks and should not promise
-guaranteed returns. All promotional content must comply with financial regulatory
-guidelines.
+                  cryptocurrency must provide clear information about risks and should not promise
+                  guaranteed returns. All promotional content must comply with financial regulatory
+                  guidelines.
                     </p>
 
                     <b> 12. Drug and Alcohol Treatment Centers.</b>
                     <p> 
                    Content promoting drug and alcohol
-treatment centers must be factual and not misleading. These centers must be
-properly licensed and accredited where required.
-                    </p>
+                    treatment centers must be factual and not misleading. These centers must be
+                    properly licensed and accredited where required.
+                                        </p>
 
 
                     <b> 13. Government, Elections, or Politics.</b>
                     <p> 
                     Political content, particularly advertisements,
-must not include misinformation about voting, political processes, or misinformation
-that could affect public trust in civic institutions. Political content must be transparent
-about who is paying for the advertisement and where it is being served.
+                      must not include misinformation about voting, political processes, or misinformation
+                      that could affect public trust in civic institutions. Political content must be transparent
+                      about who is paying for the advertisement and where it is being served.
                     </p>
 
 
                 <b> 14. Format Restrictions.</b> <p> 
                Content must not use formatting techniques that excessively
-distract or mislead users. This includes overly sensationalized headlines or visuals
-that distort the facts of the content.
+              distract or mislead users. This includes overly sensationalized headlines or visuals
+              that distort the facts of the content.
                 </p>
 
 
                 <b> 15. Enforcement.</b> <p> 
                 Violations of this policy may result in content removal, account
-suspension, or other enforcement actions depending on the severity of the violation.
-Company reserves the right to enforce these policies at its discretion to maintain a
-safe and legal environment for all users.
+              suspension, or other enforcement actions depending on the severity of the violation.
+              Company reserves the right to enforce these policies at its discretion to maintain a
+              safe and legal environment for all users.
                 </p>
 
 
                 <b>16. Amendments.</b>
                 <p> We may update this Restricted Content Policy from time to time to
-reflect changes in Services, operations, business practices, industry standards,
-community needs, legal standards, or other regulations. When we make changes,
-we will post the updated policy on this page and update the &quot;Last Updated&quot; date at
-the top. If we make material changes to these Terms, we will notify you by email or
-by posting a notice on our Services. Your continued use of our Services after any
-such change constitutes your acceptance of the new Terms. We encourage our
-users to review this Restricted Content Policy periodically to stay informed about our
-use of cookies and related technologies.
+                reflect changes in Services, operations, business practices, industry standards,
+                community needs, legal standards, or other regulations. When we make changes,
+                we will post the updated policy on this page and update the &quot;Last Updated&quot; date at
+                the top. If we make material changes to these Terms, we will notify you by email or
+                by posting a notice on our Services. Your continued use of our Services after any
+                such change constitutes your acceptance of the new Terms. We encourage our
+                users to review this Restricted Content Policy periodically to stay informed about our
+                use of cookies and related technologies.
                 </p>
                 <b> 17. Contact us: </b> <p>If you have any questions about our Restricted Content Policy, please email us at support@polloton.com.</p>`)}>Restricted Behavior Policy</li>
               </ul>
