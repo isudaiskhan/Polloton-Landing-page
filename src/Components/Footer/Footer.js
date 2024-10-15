@@ -14,7 +14,7 @@ const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
-  const modalRef = useRef(null); // Create a ref for the modal
+  const modalRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -1594,7 +1594,6 @@ services;</p>
               Company reserves the right to enforce these policies at its discretion to maintain a
               safe and legal environment for all users.
                 </p>
-
 
                 <b>16. Amendments.</b>
                 <p> We may update this Restricted Content Policy from time to time to
