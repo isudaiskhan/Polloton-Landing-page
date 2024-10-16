@@ -1659,7 +1659,6 @@ services;</p>
       </div>
 
 
-
       <AnimatePresence>
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex px-4 justify-center items-center">
@@ -1677,13 +1676,14 @@ services;</p>
                   <GiCrossMark className='text-xl' />
                 </button>
               </div>
-              <div className="mt-2 max-h-[21rem] overflow-y-auto">
+              <div className="mt-2 max-h-[21rem] overflow-y-auto scrollable">
                 <div className='text-xs' dangerouslySetInnerHTML={{ __html: modalContent }} />
               </div>
             </motion.div>
           </div>
         )}
       </AnimatePresence>
+
     </>
   );
 };
