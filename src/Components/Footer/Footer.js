@@ -13,6 +13,7 @@ const Footer = () => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
+  const [modalHeading, setModalHeading] = useState('');
 
   const modalRef = useRef(null);
 
@@ -28,7 +29,8 @@ const Footer = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const openModal = (content) => {
+  const openModal = (heading, content) => {
+    setModalHeading(heading);
     setModalContent(content);
     setIsModalOpen(true);
   };
@@ -36,6 +38,7 @@ const Footer = () => {
   const closeModal = () => {
     setIsModalOpen(false);
     setModalContent('');
+    setModalHeading('');
   };
 
   const handleClickOutside = (event) => {
@@ -65,6 +68,7 @@ const Footer = () => {
     x: initialXRight,
     opacity: 0,
   };
+
 
   return (
     <>
@@ -101,17 +105,15 @@ const Footer = () => {
               className='space-y-3 mt-16'
             >
               <ul>
-                <li
-                  className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Terms of Service</h1>
-                    <b class="mt-4">1. Acceptance of Terms:</b> <p> By accessing or using our Platform or Services, you
+                <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
+                  onClick={() => openModal("Terms of Service", `
+                    <b class="mt-2">1. Acceptance of Terms:</b> <p> By accessing or using our Platform or Services, you
                       acknowledge that you have read, understood, and agree to be bound by and
                       adhere to these Terms and all Policies and Terms incorporated by reference. If
                       you do not agree to these Terms, do not access or use our Platform or Services,
                       delete our applications and promptly exit our websites.</p>
 
-                      <b> 2. Agreement to Binding Arbitration:</b> <p> By accessing the Platform and using the
+                      <b class="block mt-4"> 2. Agreement to Binding Arbitration:</b><p> By accessing the Platform and using the
                       Services, you irrevocably agree that all disputes between you and Company that
                       in any way relate to these Terms or your use of the Platform or Services will be
                       resolved by BINDING ARBITRATION. ACCORDINGLY, YOU EXPRESSLY
@@ -124,7 +126,7 @@ const Footer = () => {
                       agreement to arbitrate any disputes with Company. All claims must be brought
                       within one year.</p>
 
-                      <b> 3. The Platform: </b> <p> The Platform or Services enable visitors (a) to create profiles and
+                      <b class="block mt-4"> 3. The Platform: </b> <p> The Platform or Services enable visitors (a) to create profiles and
                       polls (“Authors”), (b) to vote on and engage with polls (“Voters”); (c) to raise tips
                       and obtain sponsorships for Authors (“Earners”); (d) to raise funds and solicit
                       donations to support the organization and/or mission of appropriately qualified
@@ -135,7 +137,7 @@ const Footer = () => {
                       through separate Services Agreements. All visitors using any of our Services are
                       collectively referred to as “Users”. </p>
 
-                      <b> 4. The Role of Company: </b> <p> The Platform is offered only to provide technology to
+                      <b class="block mt-4"> 4. The Role of Company: </b> <p> The Platform is offered only to provide technology to
                       allow Authors, Voters, Earners, Causes and Supporters or other Users to
                       connect. Company’s role is expressly limited to making the Platform available
                       and maintaining Services for Authors, Voters, Earners, Causes, Supporters and
@@ -173,12 +175,12 @@ const Footer = () => {
                       or Services with the agreement of all parties. In the event Company elects, in its
                       sole discretion, to provide such services, then our decision is final and binding on
                       all parties and cannot be appealed, challenged or reversed.</p>
-                      <b> 5. Eligibility: </b> <p>  You must be at least 13 years old to use our Services. If you are
+                      <b class="block mt-4"> 5. Eligibility: </b> <p>  You must be at least 13 years old to use our Services. If you are
                       under 18, you may use our platform only with the involvement and explicit
                       permission of a parent or guardian. By agreeing to these Terms, you represent
                       and warrant that you are at least 13 years old and have the right, authority, and
                       capacity to enter into these Terms.</p>
-                      <b> 6. Your Account: </b> <p> To access certain features of our Services, e.g., to create or vote
+                      <b class="block mt-4"> 6. Your Account: </b> <p> To access certain features of our Services, e.g., to create or vote
                       on polls, contribute content, raise or provide funds or donations, you must create
                       an account. You agree to provide accurate, complete, and current information
                       during the registration process and to update such information to keep it
@@ -196,7 +198,7 @@ const Footer = () => {
                       password, and to notify Company immediately of any unauthorized use of your
                       account. We are not liable for any loss or damage arising from your failure to
                       protect your account information.</p>
-                      <b> 7. Responsibilities of Earners and Causes:</b>
+                      <b class="block mt-4"> 7. Responsibilities of Earners and Causes:</b>
                       Earners and Causes warrant that: <p> 
                       All information provided in connection with their use of the Services and with
                       respect to raising funds is accurate, current and complete and not likely to
@@ -229,7 +231,7 @@ const Footer = () => {
                       taxing authority.</p>
 
 
-                      <b>8. Responsibilities of Supporters:</b>
+                      <b class="block mt-4">8. Responsibilities of Supporters:</b>
                       <p> All payments made through the Services are at the Supporter’s own risk. It is the
                       Supporter’s responsibility to investigate the Earner or Cause and to understand
                       how your payments will be used. Company is not responsible for any offers,
@@ -255,7 +257,7 @@ const Footer = () => {
                       apply to payments made to Earners or Causes. If a Supporter purchases items
                       from an Earner or Cause, the Supporter is responsible for payment of all
                       applicable sales and use taxes.‍</p>
-                      <b> 9. Fees: </b> <p> Creating an account, profile, and polls on Company is free. Company also
+                      <b class="block mt-4"> 9. Fees: </b> <p> Creating an account, profile, and polls on Company is free. Company also
                       does not charge fees on donations paid directly to accredited non-profit
                       organizations. We aspire to fund our operations with voluntary tips from our users
                       and by collecting fees on payments you receive directly through your activity on
@@ -267,7 +269,7 @@ const Footer = () => {
                       associated with your use of our Platform or Services. Company is partnered
                       with Stripe for payment processing (“Payment Processor”). When you use our
                       Services, you are also agreeing to the Payment Processors’ Terms of Service.</p>
-                      <b> 10.  Taxes: </b> <p> Payments for donations, tips and service fees made by Users or received
+                      <b class="block mt-4"> 10.  Taxes: </b> <p> Payments for donations, tips and service fees made by Users or received
                       from Users through the Platform do not include any foreign, federal, state or local
                       sales, use or other similar taxes, however designated, levied against the sale,
                       licensing, delivery or use of the Platform or Services. You shall not be liable for
@@ -281,7 +283,7 @@ const Footer = () => {
                       from and against any taxes or other monies resulting from the failure to hold a
                       certificate recognized as valid by the appropriate tax authority.</p>
 
-                      <b> 11.  Payments: </b> <p>  Payment Processor provides all financial services for payments
+                      <b class="block mt-4"> 11.  Payments: </b> <p>  Payment Processor provides all financial services for payments
                       made to through the Platform. Payment Processor accepts credit and debit cards
                       issued by U.S. banks and ACH payments. If a credit card account is being used
                       for a transaction, Payment Processor may obtain preapproval for an amount up
@@ -336,14 +338,14 @@ const Footer = () => {
                       fees made directly to Company are final and non-refundable; Company may
                       determining at its sole discretion when and whether to issue voluntary refunds.</p>
 
-                      <b> 12. Privacy: </b> <p> Your privacy is important to us. Company&#39;s collection and use of
+                      <b class="block mt-4"> 12. Privacy: </b> <p> Your privacy is important to us. Company&#39;s collection and use of
                       personal information in connection with the Services are described in our Privacy
                       Policy, which is incorporated by reference into these Terms. Our Privacy Policy
                       explains how we collect, use, and share your personal information. By using our
                       Services, you agree to our collection, use, and sharing of your personal
                       information as described in our Privacy Policy.</p>
 
-                      <b> 13. User Content: </b> <p> “User Content” is any comments, ideas, suggestions, information,
+                      <b class="block mt-4"> 13. User Content: </b><p> “User Content” is any comments, ideas, suggestions, information,
                       files, videos, images or other materials a User provides to us, uploads, posts,
                       publishes, displays, transmits or otherwise uses (hereinafter, “Uploads”) on the
                       Platform. You agree that you are solely responsible for the User Content you
@@ -394,7 +396,7 @@ const Footer = () => {
                       We reserve the right to remove any content that violates these Terms or that we
                       find objectionable.</p>
 
-                      <b> 14. Respecting Copyrights: </b> <p> We take copyright infringement seriously and are
+                      <b class="block mt-4"> 14. Respecting Copyrights: </b> <p> We take copyright infringement seriously and are
                       committed to complying with the Digital Millennium Copyright Act (DMCA) and
                       other applicable copyright laws. We encourage users to be mindful of copyright
                       ownership and to obtain necessary permissions before posting any content that
@@ -409,7 +411,7 @@ const Footer = () => {
                       repeatedly infringe copyrights. We may also take other actions, such as removing
                       infringing content or disabling access to certain features, at our discretion.</p>
 
-                      <b> 15. Links to Third Parties: </b>s <p> User Content and our Services may permit you to link to
+                      <b class="block mt-4"> 15. Links to Third Parties: </b> <p> User Content and our Services may permit you to link to
                       other websites, services, resources or material on the Internet, and other
                       websites, services or resources may contain links to our Platform or Services.
                       When you access third party resources on the Internet, you do so at your own
@@ -442,7 +444,7 @@ const Footer = () => {
                       through such other type of link and to require termination of any such link to the
                       Platform, at our discretion at any time.</p>
 
-                      <b> 16. Accuracy and Integrity of Information; Errors: </b> <p> Although Company attempts to
+                      <b class="block mt-4"> 16. Accuracy and Integrity of Information; Errors: </b> <p> Although Company attempts to
                       ensure the integrity and accuracy of the Platform, it makes no representations,
                       warranties or guarantees whatsoever as to the correctness, accuracy, or
                       accessibility of the Platform and Content thereon. It is possible that the Platform
@@ -459,10 +461,10 @@ const Footer = () => {
                       the right to unilaterally correct any inaccuracies on the Platform without notice.
                       Information contained on the Platform may be changed or updated without
                       notice.</p>
-                      <b> 17. Paid-contribution disclosure: </b> <p> Authors must disclose their employer, client, and
+                      <b class="block mt-4"> 17. Paid-contribution disclosure: </b> <p> Authors must disclose their employer, client, and
                       affiliation with respect to any contribution for which they receive, or expect to
                       receive, compensation.</p>
-                      <b> 18. User Conduct: </b> <p>  You agree to use our Services only for lawful purposes and in a
+                      <b class="block mt-4"> 18. User Conduct: </b> <p>  You agree to use our Services only for lawful purposes and in a
                       manner that does not infringe the rights of or restrict or inhibit the use and
                       enjoyment of the Services by any other User or third party. You may not use our
                       Services for any unlawful purpose or in a manner that violates these Terms.
@@ -497,7 +499,7 @@ const Footer = () => {
                       Attempting to interfere in any way with the Platform’s or our networks or
                       network security or attempting to use the Platform’s service to gain
                       unauthorized access to any other computer system.</p>
-                      <b> 19. Violation of Platform Security: </b> <p> Violations of system or network security may
+                      <b class="block mt-4"> 19. Violation of Platform Security: </b> <p> Violations of system or network security may
                       result in civil or criminal liability. Company will investigate occurrences and may
                       involve, and cooperate with, law enforcement authorities in prosecuting the User
                       or Users who are involved in such violations. You are prohibited from violating or
@@ -517,7 +519,7 @@ const Footer = () => {
                       including promotions and/or advertising of products or services, or
                       Forging any TCP/IP packet header or any part of the header information in
                       any e-mail or newsgroup posting.</p>
-                      <b> 20. Intellectual Property:</b> <p> The Platform or Services and their entire contents,
+                      <b class="block mt-4"> 20. Intellectual Property:</b><p> The Platform or Services and their entire contents,
                       features, and functionality are owned by Company, its licensors, or other
                       providers of such material and are protected by U.S. and international copyright,
                       trademark, patent, trade secret, and other intellectual property or proprietary
@@ -530,7 +532,7 @@ const Footer = () => {
                       techniques to enclose, or deep link to, any name, trademarks, service marks,
                       logo, Content or other proprietary information (including images, text, page
                       layout, or form) of Company without our express prior written consent.</p>
-                      <b> 21. Our Right to Refuse, Terminate or Suspend Use: </b> <p> Company expressly
+                      <b class="block mt-4"> 21. Our Right to Refuse, Terminate or Suspend Use: </b> <p> Company expressly
                       reserves the right to terminate the use of, or to refuse to permit the use of, the
                       Platform or Services by any person or entity, at the sole discretion of Company,
                       for any reason or no reason at all, and with or without cause or prior notice,
@@ -548,7 +550,7 @@ const Footer = () => {
                       removing any content from the Platform. We may also investigate the use of a
                       credit card by a User and take such action as we deem appropriate, including,
                       but not limited to, canceling any transaction by such User.</p>
-                      <b> 22. Disclaimer of Warranties: </b>
+                      <b class="block mt-4"> 22. Disclaimer of Warranties: </b>
                       <p> YOU ASSUME TOTAL RESPONSIBILITY AND RISK FOR YOUR USE OF THE
                       PLATFORM AND RELATED SERVICES, AND LINKED WEBSITES. YOU
                       UNDERSTAND AND AGREE THAT TO THE FULLEST EXTENT PERMITTED
@@ -583,7 +585,7 @@ const Footer = () => {
                       A PARTY TO, AND DOES NOT MONITOR, ANY TRANSACTION BETWEEN
                       USERS AND THIRD PARTIES WITHOUT THE DIRECT INVOLVEMENT OF
                       COMPANY.</p>
-                      <b> 23. Limitation of Liability Regarding Use of the Platform or Services: </b>
+                      <b class="block mt-4"> 23. Limitation of Liability Regarding Use of the Platform or Services: </b>
                       <p> TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, NEITHER
                       COMPANY, ITS AFFILIATES OR ANY OF THEIR RESPECTIVE DIRECTORS,
                       OFFICERS, EMPLOYEES, AGENTS, OR CONTENT OR SERVICE
@@ -603,7 +605,7 @@ const Footer = () => {
                       NOT LIMITED TO, NEGLIGENCE OR OTHERWISE) ARISING FROM THESE
                       TERMS OR YOUR USE OF THE PLATFORM EXCEED, IN THE AGGREGATE,
                       $100.00.</p>
-                      <b> 24. Indemnification: </b> <p> Each User agrees to defend, indemnify and hold harmless
+                      <b class="block mt-4"> 24. Indemnification: </b> <p> Each User agrees to defend, indemnify and hold harmless
                       Company, its directors, officers, employees, agents and affiliates from any and all
                       claims, liabilities, damages, costs and expenses, including reasonable attorneys’
                       fees, in any way arising from, related to or in connection with (a) your use of or
@@ -617,11 +619,11 @@ const Footer = () => {
                       or (e) your providing inaccurate or incomplete information to us or Payment
                       Processor.</p>
 
-                      <b> 25. Choice of Law: </b> <p> These Terms shall be governed by and construed in accordance
+                      <b class="block mt-4"> 25. Choice of Law: </b><p> These Terms shall be governed by and construed in accordance
                       with the laws of the State of Delaware, without regard to its conflict of law
                       provisions.</p>
 
-                      <b> 26. International Use: </b> <p> We control and operate the Platform from our offices in the
+                      <b class="block mt-4"> 26. International Use: </b> <p> We control and operate the Platform from our offices in the
                       U.S., and all information is processed within the U.S. We do not represent that
                       materials on the Platform are appropriate or available for use in other locations.
                       Persons who choose to access the Platform from other locations do so on their
@@ -632,7 +634,7 @@ const Footer = () => {
                       agree to comply with all applicable laws regarding the transmission of technical
                       data exported from the U.S. or the country in which you reside.</p>
 
-                      <b> 27. Dispute Resolution and Arbitration Agreement: </b> <p> We will try to work in good
+                      <b class="block mt-4"> 27. Dispute Resolution and Arbitration Agreement: </b> <p> We will try to work in good
                       faith to resolve any issue you have with the Platform, including payments made
                       for products and services offered through the Platform, if you bring that issue to
                       the attention of our customer service department. However, we realize that there
@@ -722,7 +724,7 @@ const Footer = () => {
                       venue for any claims will be in state or federal courts located in and for
                       Wilmington, Delaware.</p>
 
-                      <b> 28. Notices: </b> <p>  Except for notices relating to arbitration of disputes, any notices (i) to us
+                      <b class="block mt-4"> 28. Notices: </b> <p>  Except for notices relating to arbitration of disputes, any notices (i) to us
                       shall be given by postal mail addressed to: Ecomo.World LLC, 1978 Watson
                       Circle, Rochester, Michigan 48306. (“Notice Address”) or by email
                       to support@polloton.com or (ii) to you at the e-mail address provided to us by
@@ -732,7 +734,7 @@ const Footer = () => {
                       to us by you upon registration. Notice given by postal mail shall be deemed to
                       have been given three (3) business days after the date of mailing.</p>
 
-                      <b> 29. Amendments: </b>  <p> We reserve the right to modify these Terms at any time. Terms
+                      <b class="block mt-4"> 29. Amendments: </b><p> We reserve the right to modify these Terms at any time. Terms
                       may be amended periodically to reflect changes in Services, operations,
                       business practices, industry standards, community needs, legal standards, or
                       other regulations. When we make changes, we will post the updated policy on
@@ -742,7 +744,7 @@ const Footer = () => {
                       your acceptance of the new Terms. We encourage our users to review these
                       Terms periodically to ensure compliance.</p>
 
-                      <b> 30. Miscellaneous: </b> <p> Company reserves the right, in its sole discretion, to terminate
+                      <b class="block mt-4"> 30. Miscellaneous: </b> <p> Company reserves the right, in its sole discretion, to terminate
                       your access to all or part of the Platform, with or without cause and with or
                       without notice.
                       These Terms constitute the entire agreement between you and Company
@@ -770,7 +772,7 @@ const Footer = () => {
                       These Terms inure to the benefit of Company’s successors, assigns and
                       licensees. The section titles in these Terms are for convenience only and have no
                       legal or contractual effect.</p>
-                      <b> 31. Contact Us: </b>  <p> If you have any questions about these Terms, please contact us
+                      <b class="block mt-4"> 31. Contact Us: </b><p> If you have any questions about these Terms, please contact us
                       at support@polloton.com.</p>`)}
                 >
                   Terms of Service
@@ -778,19 +780,17 @@ const Footer = () => {
 
 
 
-                <li
-                  className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Privacy Policy</h1>
+                <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
+                  onClick={() => openModal("Privacy Policy", `
 
-                    <b> 1. Acceptance of Terms. </b> <p> By accessing or using our Services, you acknowledge
+                    <b class="block mt-2"> 1. Acceptance of Terms. </b> <p> By accessing or using our Services, you acknowledge
                     that you have read, understood, and agree to be bound by and adhere to this
                     Privacy Policy and all Policies and Terms incorporated by reference. Your use of
                     our Services constitutes your acceptance of these policies and any applicable
                     terms.</p>
 
 
-                    <b> 2. Information We Collect.</b> <p> When you create an account, make a purchase, or
+                    <b class="block mt-4"> 2. Information We Collect.</b><p> When you create an account, make a purchase, or
                     interact with our Services, we may collect personal information. These incude:
                     Contact Information: Name, birthday, gender, email address, postal address,
                     phone number, your username and password
@@ -806,16 +806,16 @@ const Footer = () => {
                     information necessary to process transactions, including credit card details
                     and billing address.</p>
 
-                    <b> 3. Cookies and Tracking Technologies: </b> <p> We use cookies and similar tracking
+                    <b class="block mt-4"> 3. Cookies and Tracking Technologies: </b> <p> We use cookies and similar tracking
                     technologies to help us understand how you use our Services, remember your
                     preferences, to enhance your experience, analyze trends, and gather
                     demographic information about our user base. You can control cookies through
                     your browser settings. For more information, please see our Cookies Policy. </p>
 
-                    <b> 4. How We Use Your Information. </b> <p>  We use your data to provide and improve our
+                    <b class="block mt-4"> 4. How We Use Your Information. </b> <p>  We use your data to provide and improve our
                     Services, process transactions, communicate with you, and for security
                     purposes. Specifically, we use your information for:</p>
-                    <b> 4.1 Providing and Improving Our Services: </b> <p> We use your information to deliver
+                    <b class="block mt-4"> 4.1 Providing and Improving Our Services: </b> <p> We use your information to deliver
                     our products and services, process transactions, and improve our platform&#39;s
                     functionality, performance and security, to process transactions and send related
                     information, including confirmations and invoices, to send you technical notices,
@@ -823,34 +823,34 @@ const Footer = () => {
                     your comments, questions, and requests and provide customer service.</p>
 
 
-                    <b> 4.2 Communication: </b> <p> We may use your contact information to send you
+                    <b class="block mt-4"> 4.2 Communication: </b> <p> We may use your contact information to send you
                     important notifications, updates, and promotional messages related to products,
                     services, offers, promotions, and events, and provide other news or information
                     about us and our partners. You can opt-out of receiving marketing
                     communications at any time.</p>
 
-                    <b> 4.3 Personalization: </b> <p> We may use your information to personalize your
+                    <b class="block mt-4"> 4.3 Personalization: </b> <p> We may use your information to personalize your
                     experience, such as displaying relevant content and advertisements.</p>
 
 
-                    <b> 4.4 Aggregated Data: </b> <p> We may compile and analyze aggregated data about our
+                    <b class="block mt-4"> 4.4 Aggregated Data: </b> <p> We may compile and analyze aggregated data about our
                     users to better understand customer demographics, interests, and behavior. This
                     aggregate information does not identify you personally and may be shared with
                     affiliates, agents, and business partners.</p>
 
 
-                    <b> 4.5 Legal Compliance: </b> <p> We may process your information to comply with
+                    <b class="block mt-4"> 4.5 Legal Compliance: </b> <p> We may process your information to comply with
                     applicable laws, regulations, legal processes, or enforceable governmental
                     requests.</p>
 
-                    <b> 5. Sharing Your Information.</b>
+                    <b class="block mt-4"> 5. Sharing Your Information.</b>
                     <p> 
                     Information. We do not sell or share your personal information
                     with third parties without your consent, except with Service Providers, for Legal
                     Compliance, and for Business Transfers.
                     </p>
 
-                    <b> 5.1 Service Providers:</b>
+                    <b class="block mt-4"> 5.1 Service Providers:</b>
                     <p> 
                     We may share your information with trusted third-party
                     service providers who assist us in operating our platform or provide services on
@@ -859,7 +859,7 @@ const Footer = () => {
                     subject to confidentiality obligations.
                     </p>
 
-                    <b> 5.2 Legal Requirements:</b>
+                    <b class="block mt-4"> 5.2 Legal Requirements:</b>
                     <p> 
                     We may disclose your information if required to do so
                     by law or in the good faith belief that such action is necessary to comply with a
@@ -869,7 +869,7 @@ const Footer = () => {
                     </p>
 
 
-                    <b> 5.3 Business Transfers:</b>
+                    <b class="block mt-4"> 5.3 Business Transfers:</b>
                     <p> 
                     In the event of a merger, acquisition, or sale of all or a
                     portion of our assets, your information may be transferred as part of the
@@ -877,7 +877,7 @@ const Footer = () => {
                     </p>
 
 
-                <b> 6. Data Security.</b> <p> 
+                <b class="block mt-4"> 6. Data Security.</b> <p> 
                 We take reasonable measures, including administrative,
                 technical, and physical safeguards, to protect your information from loss, theft,
                 misuse, and unauthorized access, disclosure, alteration, and destruction. We
@@ -889,7 +889,7 @@ const Footer = () => {
                 </p>
 
 
-                <b> 7. Data Retention:</b> <p> 
+                <b class="block mt-4"> 7. Data Retention:</b> <p> 
                 We retain your personal data for as long as necessary to fulfill
                 the purposes for which it was collected, comply with our legal obligations, resolve
                 disputes, and enforce our agreements. When your data is no longer needed, we
@@ -897,7 +897,7 @@ const Footer = () => {
                 </p>
 
 
-                <b>8. Your Rights:</b>
+                <b class="block mt-4">8. Your Rights:</b>
                 <p> You may review, change, or terminate your account at any time by
                 logging into your account settings. You can also manage your cookie preferences
                 through your browser settings or by using our cookie consent tool. We retain your
@@ -905,7 +905,7 @@ const Footer = () => {
                 this Privacy Policy, unless a longer retention period is required or permitted by
                 law. You have the following rights regarding your personal data:
                 </p>
-                <p> Access: You can request a copy of the personal data we hold about you.
+                <p>Access: You can request a copy of the personal data we hold about you.
                 Correction: You can request that we correct any inaccurate or incomplete
                 data.
                 Deletion: You can request that we delete your personal data, subject to
@@ -917,7 +917,7 @@ const Footer = () => {
                 organization or directly to you.
                 To exercise any of these rights, please contact us at  support@polloton.com.</p>
 
-                <b> 9. Third-Party Links: </b> <p> We may permit others to link to this Platform or to post a link
+                <b class="block mt-4"> 9. Third-Party Links: </b> <p> We may permit others to link to this Platform or to post a link
                 to their website on ours.  We do not endorse these linked websites. These
                 websites are out of our direct control, and by visiting the website our Platform
                 visitors acknowledge this fact, and accept any risks that may be incurred by
@@ -932,7 +932,7 @@ const Footer = () => {
                 Identifiable Information collected by advertisements not associated with the
                 Platform or the Company.</p>
 
-                <b> 10. Notice to California Residents: </b> <p> Your California Privacy Rights.  Certain
+                <b class="block mt-4"> 10. Notice to California Residents: </b> <p> Your California Privacy Rights.  Certain
                 California residents may request disclosure about the manner in which we share
 
                 certain categories of information with others for their marketing purposes. If you
@@ -942,13 +942,13 @@ const Footer = () => {
                 Privacy Act (CCPA). We will update this Privacy Policy when we qualify for
                 coverage under the CCPA.</p>
 
-                <b> 11. Notice to Nevada Residents: </b> <p>  We do not transfer personal information for
+                <b class="block mt-4"> 11. Notice to Nevada Residents: </b> <p>  We do not transfer personal information for
                 monetary consideration.  If you would like to tell us not to sell your information in
                 the future please email us at support@polloton.com with your name, postal
                 address, telephone number and email address with “Nevada do not sell” in the
                 subject line.</p>
 
-                <b> 12. International Data Transfers: </b> <p> Company is based in the United States, and your
+                <b class="block mt-4"> 12. International Data Transfers: </b> <p> Company is based in the United States, and your
                 data may be transferred to, stored, and processed in the United States or any
                 other country where we or our service providers operate. We ensure that such
                 transfers are carried out in compliance with applicable data protection laws and
@@ -960,13 +960,13 @@ const Footer = () => {
                 Privacy Policy are compliant with laws outside those jurisdictions that apply to the
                 collection, security, use and disclosure of personal information.</p>
 
-                <b> 13. Childrens Privacy. </b> <p> Our services are not designed nor intended to be attractive
+                <b class="block mt-4"> 13. Childrens Privacy. </b><p> Our services are not designed nor intended to be attractive
                 for children under the age of 13. If you are under 13 please do not submit any
                 information to us. We do not knowingly collect information of minors under the
                 age of 13 years of age online. If we discover that we hold information from an
                 individual under the age of 13, we will take steps to delete such information.</p>
 
-                <b> 14. Amendments. </b> <p>We may update this Privacy Policy from time to time to reflect
+                <b class="block mt-4"> 14. Amendments. </b> <p>We may update this Privacy Policy from time to time to reflect
                 changes in Services, operations, business practices, industry standards,
                 community needs, legal standards, or other regulations. When we make
                 changes, we will post the updated policy on this page and update the &quot;Last
@@ -976,30 +976,27 @@ const Footer = () => {
                 Terms. We encourage our users to review this Privacy Policy periodically to stay
                 informed about how we are protecting your data and to ensure compliance.</p>
 
-                <b> 15. Contact Us. </b> <p>If you have any questions about our Privacy Policy, please email us
+                <b class="block mt-4"> 15. Contact Us. </b> <p>If you have any questions about our Privacy Policy, please email us
                 at  support@polloton.com.</p>`
                   )}
                 >
                   Privacy Policy
                 </li>
-                <li
-                  className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Cookies Policy</h1>
-
-                    <b> 1. Acceptance of Terms.</b> <p>By accessing or using our Services, you acknowledge
+                <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
+                  onClick={() => openModal("Cookies Policy", `
+                    <b class="block mt-2"> 1. Acceptance of Terms.</b> <p>By accessing or using our Services, you acknowledge
                     that you have read, understood, and agree to be bound by and adhere to this
                     Cookies Policy and all Policies and Terms incorporated by reference. If you do
                     not agree to these Terms, do not access or use our Services.</p>
 
 
-                    <b> 2. What are cookies?</b> <p> Cookies are small data files that are placed on your
+                    <b class="block mt-4"> 2. What are cookies?</b><p> Cookies are small data files that are placed on your
                     computer or mobile device when you visit a website. Cookies are widely used by
                     online service providers to facilitate and help to make the interaction between
                     users and websites, mobile apps, and online platforms faster and easier, as well
                     as to provide reporting information.</p>
 
-                    <b> 3. Why do we use cookies? </b> <p>Cookies on our website are used for several reasons.
+                    <b class="block mt-4"> 3. Why do we use cookies? </b> <p>Cookies on our website are used for several reasons.
                     Some cookies are required for technical reasons for our Services to operate, and
                     we refer to these as &quot;essential&quot; or &quot;strictly necessary&quot; cookies. Other cookies
                     enable us and the third parties we work with to track and target the interests of
@@ -1009,7 +1006,7 @@ const Footer = () => {
                     interacting with our platform and to otherwise improve the functionality of the
                     services we provide. </p>
 
-                    <b> 4. How can I control cookies? </b> <p> You have the right to decide whether to accept or
+                    <b class="block mt-4"> 4. How can I control cookies? </b> <p> You have the right to decide whether to accept or
                     reject cookies. You can exercise your cookie preferences by clicking on the
                     appropriate opt-out links provided in the cookie table above. You can set or
                     amend your web browser controls to accept or refuse cookies. If you choose to
@@ -1017,7 +1014,7 @@ const Footer = () => {
                     functionality and areas of our platform may be restricted.</p>
 
 
-                    <b> 5. Amendments. </b> <p> We may update this Cookies Policy from time to time to reflect
+                    <b class="block mt-4"> 5. Amendments. </b> <p> We may update this Cookies Policy from time to time to reflect
                     changes in Services, operations, business practices, industry standards,
                     community needs, legal standards, or other regulations. When we make
                     changes, we will post the updated policy on this page and update the &quot;Last
@@ -1027,7 +1024,7 @@ const Footer = () => {
                     Terms. We encourage our users to review this Cookie Policy periodically to stay
                     informed about our use of cookies and related technologies.</p>
 
-                    <b> 6. Contact us: </b> <p> If you have any questions about our use of cookies or other
+                    <b class="block mt-4"> 6. Contact us: </b> <p> If you have any questions about our use of cookies or other
                     technologies, please email us at support@polloton.com.</p>`
 
                   )}
@@ -1053,30 +1050,29 @@ const Footer = () => {
             >
               <ul>
                 <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Community Guidelines</h1>
+                  onClick={() => openModal("Community Guidelines", `
 
-                    <b> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
+                    <b class="block mt-2"> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
                     you have read, understood, and agree to be bound by and adhere to these
                     Community Guidelines and all Policies and Terms incorporated by reference. If you
                     do not agree to these Terms, do not access or use our Services.</p>
 
 
-                    <b> 2. Poll with Purpose: </b> <p> Create polls that elevate meaningful conversations and
+                    <b class="block mt-4"> 2. Poll with Purpose: </b><p> Create polls that elevate meaningful conversations and
                     contribute to the communitys goals of high-quality information and well-informed
                     opinions.</p>
 
-                    <b> 3. Fair Participation: </b> <p> Participate in polls fairly and honestly. Do not manipulate poll
+                    <b class="block mt-4"> 3. Fair Participation: </b> <p> Participate in polls fairly and honestly. Do not manipulate poll
                       outcomes through fraudulent means, such as using multiple accounts or
                       encouraging others to do so. </p>
 
-                    <b> 4. Fundraising and Charitable Causes: </b> <p> Be transparent about the goals and
+                    <b class="block mt-4"> 4. Fundraising and Charitable Causes: </b> <p> Be transparent about the goals and
                     beneficiaries of any fundraising activities. Provide clear and accurate information
                     about how funds will be used. Ensure that all charitable causes and fundraising
                     activities are legitimate and that funds are used as promised.</p>
 
 
-                    <b> 5. Accuracy and Authenticity: </b> <p> Company is a platform for accurate and verified
+                    <b class="block mt-4"> 5. Accuracy and Authenticity: </b> <p> Company is a platform for accurate and verified
                     information. We strive to ensure our listings are 100% correct, timely, and up-to-date.
                     If you're contributing to our database, ensure your postings are true and confirmed. If
                     incorrect information is spotted, correct it or notify us via support@polloton.com.
@@ -1084,28 +1080,28 @@ const Footer = () => {
                     deletion.</p>
 
 
-                    <b> 6. Credible Information: </b> <p> Share information from credible sources. Avoid spreading
+                    <b class="block mt-4"> 6. Credible Information: </b> <p> Share information from credible sources. Avoid spreading
                     misinformation or unverified claims. If you discover that you have shared incorrect
                     information, correct it promptly.</p>
 
 
-                    <b> 7. Clean Content: </b> <p> Ensure that all content you share is appropriate for a diverse
+                    <b class="block mt-4"> 7. Clean Content: </b> <p> Ensure that all content you share is appropriate for a diverse
                     audience. This includes avoiding content that is explicit, obscene, or otherwise
                     unsuitable for public sharing. Company is not a place for pornography or illegal
                     material. Do not post sexually explicit or illegal material anywhere on the platform.</p>
 
 
-                    <b> 8. Honesty: </b> <p> Be honest and transparent in your interactions. Do not misrepresent
+                    <b class="block mt-4"> 8. Honesty: </b> <p> Be honest and transparent in your interactions. Do not misrepresent
                       yourself or your intentions.</p>
 
 
-                    <b> 9. Intellectual Property: </b> <p> Only share content that you have the right to share. Do not
+                    <b class="block mt-4"> 9. Intellectual Property: </b> <p> Only share content that you have the right to share. Do not
                     plagiarize or share content that infringes on the intellectual property rights of others.
                     When adding photos, posters, and videos to Company, please refrain from
                     uploading copyrighted content without permission from the owner. If your content is
                     being used without your consent, contact us at support@polloton.com.</p>
 
-                    <b> 10. Respectful Interaction:</b>
+                    <b class="block mt-4"> 10. Respectful Interaction:</b>
                     <p> 
                     Treat all members with respect. Harassment,
                       discrimination, bullying, or any form of abuse is not tolerated. We strive for a
@@ -1119,14 +1115,14 @@ const Footer = () => {
                       someone, and repeated unwanted messages.
                     </p>
 
-                    <b> 11. Constructive Engagement:</b>
+                    <b class="block mt-4"> 11. Constructive Engagement:</b>
                     <p> 
                     Engage in discussions and debates constructively.
                     Focus on the content of the conversation, not the personalities involved. Personal
                     attacks and name-calling are not allowed.
                     </p>
 
-                    <b> 12. Provide Feedback:</b>
+                    <b class="block mt-4"> 12. Provide Feedback:</b>
                     <p> 
                     Feedback from the community is essential for improving
                     product offerings and user experiences, addressing concerns related to transactions,
@@ -1137,7 +1133,7 @@ const Footer = () => {
                     </p>
 
 
-                    <b> 13. Be Respectful and Constructive:</b>
+                    <b class="block mt-4"> 13. Be Respectful and Constructive:</b>
                     <p> 
                     When providing feedback, users are encouraged
                       to be clear, constructive, and specific to ensure that issues can be effectively
@@ -1147,7 +1143,7 @@ const Footer = () => {
                     </p>
 
 
-                <b> 14. No Violence and Criminal Behavior:</b> <p> 
+                <b class="block mt-4"> 14. No Violence and Criminal Behavior:</b> <p> 
                 Any content promoting violence, harm, or
                 criminal behavior is strictly prohibited. This includes terrorism, organized crime, or
                 hate groups and offering sexual services, buying or selling firearms, alcohol, tobacco
@@ -1156,7 +1152,7 @@ const Footer = () => {
                 </p>
 
 
-                <b> 15. Safety and Privacy:</b> <p> 
+                <b class="block mt-4"> 15. Safety and Privacy:</b> <p> 
                 We're committed to making Company a safe place and
                 protecting personal privacy and information. Do not share personal information of
                 others without their consent. This includes addresses, phone numbers, email
@@ -1166,24 +1162,24 @@ const Footer = () => {
                 </p>
 
 
-                <b>16. No Spamming or Misuse:</b>
+                <b class="block mt-4">16. No Spamming or Misuse:</b>
                 <p> Company is for sharing information, not spamming, or
                 misusing for commercial gain. Avoid posting repetitive content, advertisements, or
                 spam. This includes unsolicited promotion of products, services, or other websites.
                 </p>
               
 
-                <b> 17. Promote Company: </b> <p> If you're enjoying the Company experience, spread the word!
+                <b class="block mt-4"> 17. Promote Company: </b> <p> If you're enjoying the Company experience, spread the word!
                 More people using Company means more people get relevant, real and high-quality
                 information to make better decisions on topics that really matter in life. The world will
                 be a better, happier, smarter place as a result.</p>
 
-                <b> 18. Reporting: </b> <p> YIf you encounter content violating these guidelines, please report it using
+                <b class="block mt-4"> 18. Reporting: </b> <p> YIf you encounter content violating these guidelines, please report it using
                   the built-in reporting options. If you encounter behavior or content that violates these
                   Community Guidelines, please report it to Companys support team. Use the &quot;Report
                   Abuse&quot; option available on the platform.</p>
 
-                <b> 19. Enforcement: </b> <p>  Violations of these Community Guidelines may result in actions taken
+                <b class="block mt-4"> 19. Enforcement: </b> <p>  Violations of these Community Guidelines may result in actions taken
                 by Company, including but not limited to warnings, content removal, account
                 suspension, or permanent banning from the Services. In cases of severe violations,
                 Company reserves the right to cooperate with law enforcement authorities. For
@@ -1191,7 +1187,7 @@ const Footer = () => {
                 your content is used without permission, file a copyright or trademark report. We
                 may cooperate with law enforcement when necessary to ensure safety and security.</p>
 
-                <b> 20. Amendments. </b> <p> We may update these Community Guidelines from time to time to
+                <b class="block mt-4"> 20. Amendments. </b> <p> We may update these Community Guidelines from time to time to
                 reflect changes in Services, operations, business practices, industry standards,
                 community needs, legal standards, or other regulations. When we make changes,
                 we will post the updated policy on this page and update the &quot;Last Updated&quot; date at
@@ -1201,7 +1197,7 @@ const Footer = () => {
                 users to review these Community Guidelines periodically to stay informed about our
                 use of cookies and related technologies.</p>
 
-                <b> 21. Contact us: </b> <p>If you have any questions about our Community Guidelines, please
+                <b class="block mt-4"> 21. Contact us: </b><p>If you have any questions about our Community Guidelines, please
                 email us at support@polloton.com.</p>`
                   )} >Community Guidelines</li>
 
@@ -1211,16 +1207,15 @@ const Footer = () => {
 
 
                 <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Prohibited Behavior Policy</h1>
+                  onClick={() => openModal("Prohibited Behavior Policy", `
 
-                    <b> 1. Acceptance of Terms. </b> <p> By accessing or using our Services, you acknowledge
+                    <b class="block mt-2"> 1. Acceptance of Terms. </b> <p> By accessing or using our Services, you acknowledge
                     that you have read, understood, and agree to be bound by and adhere to this
                     Prohibited Content Policy and all Policies and Terms incorporated by reference. If
                     you do not agree to these Terms, do not access or use our Services.</p>
 
 
-                    <p> 2. The following are examples of User Content and/or use that is illegal or
+                    <p class="block mt-4"> 2. The following are examples of User Content and/or use that is illegal or
                       prohibited by Company. This list is not exhaustive, and we reserve the right to
                       remove any poll or fundraising campaign and/or investigate any User who, in our
                       sole discretion, violates any of the terms or spirit of these Terms. As we
@@ -1237,49 +1232,49 @@ const Footer = () => {
                       raise funds, Upload User Content or establish or contribute to any poll or
                       fundraising campaign with the implicit or explicit purpose of or involving:</p>
 
-<ul class="list-disc pl-3">
+<ul class="list-disc pl-4 block mt-2">
     <li>
-        <b>Breaking the Law:</b>
+        <b class="block mt-4">Breaking the Law:</b>
         <p>Content that violates any law or regulations, or facilitates, promotes, or endorses illegal activities;</p>
     </li>
     <li>
-        <b>Fraudulent schemes or scams:</b>
+        <b class="block mt-4">Fraudulent schemes or scams:</b>
         <p>Information that is fraudulent, misleading, inaccurate, dishonest, or impossible, particularly if done knowingly with the intent to deceive;</p>
     </li>
     <li>
-        <b>Financial schemes:</b>
+        <b class="block mt-4">Financial schemes:</b>
         <p>annuities, investments, loans, equity or lottery contracts, lay-away systems, off-shore banking or similar transactions, money service businesses (including currency exchanges, check cashing or the like), pyramid schemes, “get rich quick schemes” (i.e., investment opportunities or other services that promise high rewards), network marketing and referral marketing programs, debt collection or crypto-currencies;</p>
     </li>
     <li>
-        <b>Payment manipulation:</b>
+        <b class="block mt-4">Payment manipulation:</b>
         <p>Collecting payments on behalf of merchants by payment processors or otherwise; including, but not limited to, self-payments on campaigns or an attempt to bypass or otherwise circumvent the designated method of payment as provided by Company;</p>
     </li>
     <li>
-        <b>Credit card fraud:</b>
+        <b class="block mt-4">Credit card fraud:</b>
         <p>Processing where there is no bona fide donation accepted; cash advance; card testing; or evasion of card network chargeback monitoring programs;</p>
     </li>
     <li>
-        <b>Misuse of funds:</b>
+        <b class="block mt-4">Misuse of funds:</b>
         <p>The receipt or grant of cash advances or lines of credit to yourself or to another person for purposes other than those purposes clearly stated in the campaign or collecting or providing funds for any purpose other than as described in a campaign description;</p>
     </li>
     <li>
-        <b>Financial crimes:</b>
+        <b class="block mt-4">Financial crimes:</b>
         <p>Any other in support of individuals and/or entities associated with alleged financial crimes, including, but not limited to, corruption, bribery, tax evasion, fraud, and activities of a similar nature;</p>
     </li>
     <li>
-        <b>Money laundering:</b>
+        <b class="block mt-4">Money laundering:</b>
         <p>Aggregation of funds owed to third parties, factoring, or other activities intended to obfuscate the origin of funds;</p>
     </li>
 
     <li>
-        <b>Credit:</b>
+        <b class="block mt-4">Credit:</b>
         <p>credit repair or debt settlement services;</p>
     </li>
 
 
 
     <li>
-        <b>Pre-Sales:</b>
+        <b class="block mt-4">Pre-Sales:</b>
         <p>the sale of items before the seller has control or possession of the
 item;</p>
     </li>
@@ -1288,7 +1283,7 @@ item;</p>
 
 
     <li>
-        <b>Intellectual Property Violations.</b>
+        <b class="block mt-4">Intellectual Property Violations.</b>
         <p>Content, products or services that infringe
         or facilitate infringement upon the trademark, patent, copyright, trade secrets,
         or proprietary or privacy rights of any third party, including unauthorized use of
@@ -1298,7 +1293,7 @@ item;</p>
 
 
     <li>
-        <b>No-value-added services:</b>
+        <b class="block mt-4">No-value-added services:</b>
         <p>sale or resale of a service without added benefit
         to the buyer or resale of government offerings without authorization or added
         value;</p>
@@ -1306,25 +1301,25 @@ item;</p>
 
 
     <li>
-        <b>Trade violations:</b>
+        <b class="block mt-4">Trade violations:</b>
         <p>sale of goods or services that are illegally imported or exported;</p>
     </li>
 
 
     <li>
-        <b>Unauthorized sale or resale:</b>
+        <b class="block mt-4">Unauthorized sale or resale:</b>
         <p>of brand name or designer products or
 services;</p>
     </li>
 
     <li>
-        <b>Piracy:</b>
+        <b class="block mt-4">Piracy:</b>
         <p>counterfeit music, movies, software, or other licensed materials
       without the appropriate authorization from the rights holder;</p>
     </li>
 
     <li>
-        <b>Sale, Use or Promotion of Illegal Drugs:</b>
+        <b class="block mt-4">Sale, Use or Promotion of Illegal Drugs:</b>
         <p>narcotics, steroids, controlled
       substances, abuse of pharmaceuticals or similar products or therapies that
       are either illegal or prohibited;</p>
@@ -1332,7 +1327,7 @@ services;</p>
 
 
     <li>
-        <b>Nudity and Sexual Content:</b>
+        <b class="block mt-4">Nudity and Sexual Content:</b>
         <p>Any form of pornography; Content that sexually
         exploits or endangers children and adults, including sexual content relating to
         minors or persons appearing to possibly be minors; Content that promotes
@@ -1341,7 +1336,7 @@ services;</p>
 
 
     <li>
-        <b>Regulated Goods or Services:</b>
+        <b class="block mt-4">Regulated Goods or Services:</b>
         <p>Content that attempts to sell or trade non-
         medical drugs, pharmaceuticals, marijuana, or firearms, ammunition, and
         explosives.</p>
@@ -1349,7 +1344,7 @@ services;</p>
 
 
     <li>
-        <b>Violence and Graphic Content:</b>
+        <b class="block mt-4">Violence and Graphic Content:</b>
         <p>Knives, or other weaponry or accessories;
         the promotion of violent ideas such as genocide, execution, and other violent
         acts; Offensive, graphic, perverse or sensitive content; Content that glorifies
@@ -1365,7 +1360,7 @@ services;</p>
     </li>
 
     <li>
-        <b>Discrimination and Hate Speech:</b>
+        <b class="block mt-4">Discrimination and Hate Speech:</b>
         <p>Content that directly attacks or demeans
         individuals or groups based on attributes such as race, ethnicity, national
         origin, religious affiliation, mental, physical, or medical conditions or
@@ -1374,14 +1369,14 @@ services;</p>
 
 
       <li>
-        <b>Regulated Goods or Services:</b>
+        <b class="block mt-4">Regulated Goods or Services:</b>
         <p>Content that attempts to sell or trade non-medical drugs, pharmaceuticals, marijuana, or firearms, ammunition, and
         explosives.</p>
     </li>
 
 
     <li>
-        <b>Slander, Harassment, and Bullying:</b>
+        <b class="block mt-4">Slander, Harassment, and Bullying:</b>
         <p>Content meant to harass or bully
         individuals or legal entities, including: Personal attacks, defamation, or
         slander, where the primary purpose of posting such User Content is to cause
@@ -1393,7 +1388,7 @@ services;</p>
 
 
     <li>
-        <b>Exploitation:</b>
+        <b class="block mt-4">Exploitation:</b>
         <p>funding a ransom, human trafficking or exploitation, vigilantism,
           bribes or bounty;</p>
     </li>
@@ -1401,7 +1396,7 @@ services;</p>
 
 
     <li>
-        <b>Legal defense for serious crimes:</b>
+        <b class="block mt-4">Legal defense for serious crimes:</b>
         <p>campaigns for the legal defense of
         alleged crimes associated with hate, violence, harassment, bullying,
         discrimination, terrorism, or intolerance of any kind relating to race, ethnicity,
@@ -1414,7 +1409,7 @@ services;</p>
 
 
     <li>
-        <b>International sanctions:</b>
+        <b class="block mt-4">International sanctions:</b>
         <p>activities with, in, or involving countries, regions,
         governments, persons, or entities that are subject to U.S. and other economic
         sanctions under applicable law, unless such activities are expressly
@@ -1425,17 +1420,17 @@ services;</p>
 
 
     <li>
-        <b>Organized Crime:</b>
+        <b class="block mt-4">Organized Crime:</b>
         <p>aAny direct or indirect activities related to organized crime.</p>
     </li>
     <li>
-        <b>Terrorism:</b>
+        <b class="block mt-4">Terrorism:</b>
         <p>Any direct or indirect activities related to terrorism.</p>
     </li>
 
 
     <li>
-        <b>Gambling:</b>
+        <b class="block mt-4">Gambling:</b>
         <p>casino games, sports betting, fantasy sports, horse or greyhound
         racing, lottery tickets, and other ventures that facilitate gambling, games of
         skill or chance (whether or not it is legally defined as a lottery), promotions
@@ -1443,7 +1438,7 @@ services;</p>
     </li>
 
     <li>
-        <b>Misinformation and False News:</b>
+        <b class="block mt-4">Misinformation and False News:</b>
         <p>Content that promotes false claims or
         conspiracy theories that may cause harm; Misinformation that could disrupt
         public safety or undermine civic processes;</p>
@@ -1451,21 +1446,21 @@ services;</p>
 
 
     <li>
-        <b>Manipulated Media:</b>
+        <b class="block mt-4">Manipulated Media:</b>
         <p>Content manipulated to deceive or mislead; Deepfake
           videos and other forms of synthetically altered media, especially those that
           could harm user trust;</p>
     </li>
 
     <li>
-        <b>Spam and Malicious Content:</b>
+        <b class="block mt-4">Spam and Malicious Content:</b>
         <p>Unsolicited mass communication or
         advertisements; Content intended to deceive or mislead recipients; Malicious
         software or links to malware;</p>
     </li>
 
     <li>
-        <b>Generally unacceptable activity:</b>
+        <b class="block mt-4">Generally unacceptable activity:</b>
         <p>any other activity that Company may
         deem in its sole discretion to be unacceptable.</p>
     </li>
@@ -1475,17 +1470,12 @@ services;</p>
 
 
 
-
-
-
-
-
-        <b> 2. Enforcement and Reporting. </b> <p> Violations of this policy may lead to content
+        <b class="block mt-4"> 2. Enforcement and Reporting. </b> <p> Violations of this policy may lead to content
         removal, restrictions on account capabilities, or account termination. Users can
         report violations using our provided reporting tools or by contacting our support
         staff at support@polloton.com. </p>
 
-                    <b> 3. Amendments. </b> <p> We may update this Prohibited Content Policy from time to time
+                    <b class="block mt-4"> 3. Amendments. </b> <p> We may update this Prohibited Content Policy from time to time
                 to reflect changes in Services, operations, business practices, industry
                 standards, community needs, legal standards, or other regulations. When we
                 make changes, we will post the updated policy on this page and update the &quot;Last
@@ -1495,60 +1485,59 @@ services;</p>
                 Terms. We encourage our users to review this Prohibited Content Policy
                 periodically to stay informed about our use of cookies and related technologies.</p>
 
-                  <b> 4. Contact us: </b> <p> If you have any questions about our Prohibited Content Policy,
+                  <b class="block mt-4"> 4. Contact us: </b> <p> If you have any questions about our Prohibited Content Policy,
                   please email us at  support@polloton.com.</p>`)}
                 >Prohibited Behavior Policy</li>
 
                 <li className='py-2 cursor-pointer text-white hover:tracking-widest duration-500'
-                  onClick={() => openModal(`
-                    <h1 class="font-medium text-lg">Restricted Behavior Policy</h1>
+                  onClick={() => openModal("Restricted Behavior Policy", `
 
-                    <b> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
+                    <b class="block mt-2"> 1. Acceptance of Terms: </b> <p> By accessing or using our Services, you acknowledge that
                     you have read, understood, and agree to be bound by and adhere to this Restricted
                     Content Policy and all Policies and Terms incorporated by reference. If you do not
                     agree to these Terms, do not access or use our Services.</p>
 
 
-                    <b> 2. Alcohol. </b> <p> Content promoting the sale of alcohol must comply with all applicable laws,
+                    <b class="block mt-4"> 2. Alcohol. </b> <p> Content promoting the sale of alcohol must comply with all applicable laws,
                     including age restrictions and marketing standards. Promotions should not
                     encourage excessive or irresponsible consumption.</p>
 
-                    <b> 3. Tobacco and Vaping Products. </b> <p> Promotions or sales of tobacco products and e-
+                    <b class="block mt-4"> 3. Tobacco and Vaping Products. </b> <p> Promotions or sales of tobacco products and e-
                       cigarettes are restricted. Any promotional content must not target minors and must
                       adhere to health and safety guidelines. </p>
 
-                    <b> 4. Dating Services. </b> <p> Dating services must prioritize user safety and must not be
+                    <b class="block mt-4"> 4. Dating Services. </b> <p> Dating services must prioritize user safety and must not be
                     deceptive or lead to scams. These services must implement proper age verification
                     processes and provide clear guidelines on safe dating practices.</p>
 
 
-                    <b> 5. Dietary Supplements. </b> <p> Promotions for dietary supplements must not contain
+                    <b class="block mt-4"> 5. Dietary Supplements. </b> <p> Promotions for dietary supplements must not contain
                     misleading claims regarding health benefits and must not promote products not
                     approved by relevant health authorities.</p>
 
 
-                    <b> 6. Financial Services and Insurance Products. </b> <p> Content related to financial services
+                    <b class="block mt-4"> 6. Financial Services and Insurance Products. </b> <p> Content related to financial services
                     and insurance products, such as loans, investment advice, insurance, and credit
                     card applications, must be clear, fair, and not misleading. Providers must be
                     authorized or licensed by appropriate regulatory bodies and must provide
                     transparency about terms, risks, and conditions.</p>
 
 
-                    <b> 7. Health and Medical Products. </b> <p> Promotions for medical products and services must
+                    <b class="block mt-4"> 7. Health and Medical Products. </b> <p> Promotions for medical products and services must
                     have authorization from relevant health authorities. Claims must be supported by
                     scientific evidence, and content must not exploit health-related anxieties.</p>
 
 
-                    <b> 8. Cosmetic Procedures and Weight Loss. </b> <p> Content promoting cosmetic interventions
+                    <b class="block mt-4"> 8. Cosmetic Procedures and Weight Loss. </b> <p> Content promoting cosmetic interventions
                     and weight loss products must be responsible and scientifically supported. Claims
                     about results must be realistic and not exploit body image insecurities.</p>
 
 
-                    <b> 9. Family Planning and Contraception. </b> <p> Content related to family planning and
+                    <b class="block mt-4"> 9. Family Planning and Contraception. </b> <p> Content related to family planning and
                   contraception must be factual and not misleading. It should provide accurate
                   information about the effectiveness and side effects of products.</p>
 
-                    <b> 10. Pharmacies and Prescription Drugs.</b>
+                    <b class="block mt-4"> 10. Pharmacies and Prescription Drugs.</b>
                     <p> 
                     Content promoting or selling prescription
                   drugs must only be from entities that are properly licensed. Promotion of online
@@ -1556,7 +1545,7 @@ services;</p>
                   verification of prescriptions.
                     </p>
 
-                    <b> 11. Cryptocurrency Products and Services.</b>
+                    <b class="block mt-4"> 11. Cryptocurrency Products and Services.</b>
                     <p> 
                     Promotions or advice regarding
                   cryptocurrency must provide clear information about risks and should not promise
@@ -1564,7 +1553,7 @@ services;</p>
                   guidelines.
                     </p>
 
-                    <b> 12. Drug and Alcohol Treatment Centers.</b>
+                    <b class="block mt-4"> 12. Drug and Alcohol Treatment Centers.</b>
                     <p> 
                    Content promoting drug and alcohol
                     treatment centers must be factual and not misleading. These centers must be
@@ -1572,7 +1561,7 @@ services;</p>
                                         </p>
 
 
-                    <b> 13. Government, Elections, or Politics.</b>
+                    <b class="block mt-4"> 13. Government, Elections, or Politics.</b>
                     <p> 
                     Political content, particularly advertisements,
                       must not include misinformation about voting, political processes, or misinformation
@@ -1581,21 +1570,21 @@ services;</p>
                     </p>
 
 
-                <b> 14. Format Restrictions.</b> <p> 
+                <b class="block mt-4"> 14. Format Restrictions.</b> <p> 
                Content must not use formatting techniques that excessively
               distract or mislead users. This includes overly sensationalized headlines or visuals
               that distort the facts of the content.
                 </p>
 
 
-                <b> 15. Enforcement.</b> <p> 
+                <b class="block mt-4"> 15. Enforcement.</b> <p> 
                 Violations of this policy may result in content removal, account
               suspension, or other enforcement actions depending on the severity of the violation.
               Company reserves the right to enforce these policies at its discretion to maintain a
               safe and legal environment for all users.
                 </p>
 
-                <b>16. Amendments.</b>
+                <b class="block mt-4">16. Amendments.</b>
                 <p> We may update this Restricted Content Policy from time to time to
                 reflect changes in Services, operations, business practices, industry standards,
                 community needs, legal standards, or other regulations. When we make changes,
@@ -1606,7 +1595,7 @@ services;</p>
                 users to review this Restricted Content Policy periodically to stay informed about our
                 use of cookies and related technologies.
                 </p>
-                <b> 17. Contact us: </b> <p>If you have any questions about our Restricted Content Policy, please email us at support@polloton.com.</p>`)}>Restricted Behavior Policy</li>
+                <b class="block mt-4"> 17. Contact us: </b> <p>If you have any questions about our Restricted Content Policy, please email us at support@polloton.com.</p>`)}>Restricted Behavior Policy</li>
               </ul>
             </motion.div>
           </div>
@@ -1677,15 +1666,16 @@ services;</p>
           <div className="fixed inset-0 bg-black bg-opacity-50 flex px-4 justify-center items-center">
             <motion.div
               ref={modalRef}
-              className="bg-[#000000c7] text-white p-5 rounded-md shadow-md max-w-3xl mx-auto"
+              className="bg-[#000000c7] text-white px-5 py-3 rounded-md shadow-md max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.3 }}
             >
-              <div className='flex justify-end -mt-3'>
-                <button onClick={closeModal}>
-                  <GiCrossMark />
+              <div className='flex justify-between items-center'>
+                <h1 className='font-medium text-lg'>{modalHeading}</h1>
+                <button onClick={closeModal} className="text-white">
+                  <GiCrossMark className='text-xl' />
                 </button>
               </div>
               <div className="mt-2 max-h-[21rem] overflow-y-auto">
