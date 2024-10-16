@@ -69,7 +69,6 @@ const Footer = () => {
     opacity: 0,
   };
 
-
   return (
     <>
       <div className='container py-8 mx-auto mt-20 md:px-10 px-6 text-gray-300 overflow-hidden'>
